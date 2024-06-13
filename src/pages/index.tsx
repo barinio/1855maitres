@@ -16,9 +16,7 @@ export default function IndexPage() {
           <h1 className={title()}>Make&nbsp;</h1>
           <h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
           <br />
-          <h1 className={title()}>
-            websites regardless of your design experience.
-          </h1>
+          <h1 className={title()}>websites regardless of your design experience.</h1>
           <h4 className={subtitle({ class: "mt-4" })}>
             Beautiful, fast and modern React UI library.
           </h4>
@@ -30,7 +28,7 @@ export default function IndexPage() {
             className={buttonStyles({
               color: "primary",
               radius: "full",
-              variant: "shadow",
+              variant: "shadow"
             })}
             href={siteConfig.links.docs}
           >
@@ -49,8 +47,7 @@ export default function IndexPage() {
         <div className="mt-8">
           <Snippet hideCopyButton hideSymbol variant="bordered">
             <span>
-              Get started by editing{" "}
-              <Code color="primary">pages/index.tsx</Code>
+              Get started by editing <Code color="primary">pages/index.tsx</Code>
             </span>
           </Snippet>
         </div>

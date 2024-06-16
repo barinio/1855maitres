@@ -1,7 +1,6 @@
 import { Link } from "@nextui-org/link";
 import {
   Navbar as NextUINavbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
@@ -12,22 +11,23 @@ import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
 import { Button } from "@nextui-org/button";
 
+import Logo from "../Logo";
+
+// import styles from "./navbar.module.scss";
+
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand className="gap-3 max-w-fit">
-          <Link className="flex justify-start items-center gap-1" color="foreground" href="/">
-            <p className="font-bold text-inherit">
-              <span className="text-danger">1</span>855<span className="text-danger">MAITRES</span>
-              .com
-            </p>
-          </Link>
-        </NavbarBrand>
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
+      <NavbarContent
+        className="hidden sm:flex basis-1/5 sm:basis-full"
+        style={{ justifyContent: "space-between" }}
+      >
+        <Logo />
+
+        <div className={`hidden sm:flex  justify-start items-center gap-12 dynamic-gap`}>
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
@@ -37,28 +37,23 @@ export const Navbar = () => {
                 )}
                 color="foreground"
                 href={item.href}
+                style={{ fontSize: "18px" }}
               >
                 {item.label}
               </Link>
             </NavbarItem>
           ))}
           <Button variant="light">English</Button>
+          <ThemeSwitch />
         </div>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
-        <NavbarItem className="hidden sm:flex gap-2">
-          {/* <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link> */}
-
+      <NavbarContent className="sm:hidden basis-1 pl-4" style={{ justifyContent: "space-between" }}>
+        <Logo />
+        <NavbarContent className="sm:hidden basis-1 pr-4" justify="end">
           <ThemeSwitch />
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <ThemeSwitch />
-        <NavbarMenuToggle />
+          <NavbarMenuToggle />
+        </NavbarContent>
       </NavbarContent>
 
       <NavbarMenu>

@@ -1,0 +1,56 @@
+.domaineDroitSection {
+	margin-top: 75px;
+}
+
+.titleHidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.listCard {
+	display: flex;
+}
+.wrapperIcon {
+	display: flex;
+	width: 41px;
+	height: 38px;
+	border-radius: 50%;
+	background-color: rgba(48, 16, 80, 0.8);
+	padding: 8px;
+}
+.cardWrapper {
+	height: 302px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 14px;
+	padding: 14px;
+	background-color: rgba(117, 117, 138, 0.1);
+	border-radius: 10px;
+	width: 319px;
+}
+.headerCard {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.descriptionCard {
+	color: #a1a1aa;
+	padding: 12px;
+}
+.swiperSlide {
+	width: 319px;
+}
+
+.linkBtnWrapper {
+	display: flex;
+	justify-content: center;
+}

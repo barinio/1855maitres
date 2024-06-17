@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import Accueil from "@/pages/Accueil";
+import Accueil from "@/pages/Accueil/Accueil";
 import APropos from "@/pages/APropos";
 import Blogue from "@/pages/Blogue";
 import Contact from "@/pages/Contact";

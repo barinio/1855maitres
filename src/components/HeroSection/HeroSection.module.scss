@@ -1,0 +1,52 @@
+.titlePage {
+	width: 490px;
+
+	margin-bottom: 100px;
+	font-family: 'Inter', sans-serif;
+}
+
+.wrapperHeroContent {
+	width: 100%;
+	font-family: 'Inter', sans-serif;
+}
+
+.phoneLink {
+	display: inline-block;
+
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: 96px;
+
+	color: rgba(159, 144, 167, 0.7);
+}
+
+.btnLink {
+	width: 217px;
+	margin-bottom: 152px;
+}
+
+.wrapperHeroText {
+	width: 602px;
+
+	margin: auto;
+}
+
+.heroText {
+	font-size: 14px;
+	color: #a1a1aa;
+}
+
+.heroImg {
+	position: absolute;
+	width: 362px;
+	height: 690px;
+	bottom: -5%;
+	right: 0px;
+	z-index: -100;
+
+	background-image: url('../../images/hero.png');
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+
+	opacity: 0.35;
+}

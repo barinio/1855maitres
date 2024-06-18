@@ -1,0 +1,48 @@
+.lawsSection {
+	margin-top: 264px;
+}
+.lawsItemsList {
+	display: flex;
+	flex-direction: column;
+	gap: 200px;
+}
+
+.lawContentWrapper {
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+}
+
+.lawTexttWrapper {
+	.titleLawBlock {
+		font-weight: bold;
+		font-size: 60px;
+		letter-spacing: -1.5px;
+	}
+	&:nth-child(odd) {
+		.titleLawBlock {
+			color: #c20e4d;
+		}
+	}
+	&:nth-child(even) {
+		.titleLawBlock {
+			color: #f96501;
+		}
+	}
+}
+.descriptionLawBlock {
+	width: 403px;
+	color: #a1a1aa;
+}
+
+.lawTexttWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	justify-content: space-around;
+}
+
+.btnsWrapper {
+	display: flex;
+	gap: 16px;
+}

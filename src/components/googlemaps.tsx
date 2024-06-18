@@ -8,7 +8,7 @@ import { useJsApiLoader } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "100%",
-  height: "211px",
+  height: "100%",
 };
 
 const defaultOption = {

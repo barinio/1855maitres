@@ -29,8 +29,11 @@ const HeroSection = () => {
           <p className={styles.heroText}>
             Our goal is to make legal services accessible to citizens throughout Quebec. If you are
             looking to assert your rights in one of the many areas of law, you can easily contact us
-            by dialing our unique number,
-            <span className="underline">1-855-MAÎTRES</span>.
+            by dialing our unique number,{" "}
+            <Link href="#" style={{ color: "#a1a1aa" }} underline="always">
+              1-855-MAÎTRES
+            </Link>
+            .
           </p>
         </div>
       </div>

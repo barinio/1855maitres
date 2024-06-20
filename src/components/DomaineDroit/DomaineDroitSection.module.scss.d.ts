@@ -1,6 +1,5 @@
 declare const classNames: {
   readonly domaineDroitSection: "domaineDroitSection";
-  readonly titleHidden: "titleHidden";
   readonly listCard: "listCard";
   readonly wrapperIcon: "wrapperIcon";
   readonly cardWrapper: "cardWrapper";

@@ -11,7 +11,7 @@ import { Data } from "./data";
 const DomaineDroitSection = () => {
   return (
     <section className={styles.domaineDroitSection}>
-      <h2 className={styles.titleHidden}>Domaine de droit recherché</h2>
+      <h2 className="title-hidden">Domaine de droit recherché</h2>
 
       <Swiper spaceBetween={45} slidesPerView={3.5}>
         {Data.map(({ id, title, description }) => {
@@ -29,7 +29,7 @@ const DomaineDroitSection = () => {
 
                 <div className={styles.linkBtnWrapper}>
                   <Button
-                    href="https://github.com/nextui-org/nextui"
+                    href="#"
                     as={Link}
                     color="default"
                     variant="solid"

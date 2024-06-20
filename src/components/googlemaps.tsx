@@ -1,10 +1,8 @@
-// AIzaSyB_GkvDC4U2o13a88Ir4GFsa6LDs9e_N_M
-// AIzaSyC6lMMfZsZWuSFu8AbrnEHuGIn5V1ILzGs
-const API_KEY = "AIzaSyC6lMMfZsZWuSFu8AbrnEHuGIn5V1ILzGs";
-
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, MarkerF } from "@react-google-maps/api";
 import { useCallback, useRef } from "react";
 import { useJsApiLoader } from "@react-google-maps/api";
+
+const GOOGLE_API_KEY = "AIzaSyC6lMMfZsZWuSFu8AbrnEHuGIn5V1ILzGs";
 
 const containerStyle = {
   width: "100%",
@@ -29,19 +27,14 @@ function GoogleMaps() {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: API_KEY,
+    googleMapsApiKey: GOOGLE_API_KEY,
   });
 
   const onLoad = useCallback(function callback(map: any) {
     mapRef.current = map;
   }, []);
 
-  const onUnmount = useCallback(function callback(map: any) {
-    mapRef.current = undefined;
-  }, []);
-
   return (
-    // <LoadScript googleMapsApiKey={API_KEY}>
     <>
       {isLoaded ? (
         <GoogleMap
@@ -49,17 +42,15 @@ function GoogleMaps() {
           center={center}
           zoom={12}
           onLoad={onLoad}
-          onUnmount={onUnmount}
+          // onUnmount={onUnmount}
           options={defaultOption}
         >
-          <Marker position={center} />
+          <MarkerF position={center} />
         </GoogleMap>
       ) : (
         <h2>Loading...</h2>
       )}
     </>
-
-    // </LoadScript>
   );
 }
 

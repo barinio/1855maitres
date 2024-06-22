@@ -7,6 +7,7 @@ import {
   Textarea,
   Select,
   SelectItem,
+  Link,
 } from "@nextui-org/react";
 
 import { useState } from "react";
@@ -39,7 +40,6 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    // e.preventDefault();
     console.log(formData);
     setFormData({
       username: "",
@@ -71,9 +71,7 @@ const Contact = () => {
               <div className="lg:flex justify-between lg:relative">
                 <div>
                   <Card className="p-6 w-full mb-6 md:p-11 lg:w-[696px]">
-                    <form
-                    // onSubmit={handleSubmit}
-                    >
+                    <form>
                       <Input
                         className="mb-7"
                         fullWidth
@@ -110,9 +108,7 @@ const Contact = () => {
                       />
 
                       <Textarea
-                        // className="h-32 md:h-48"
                         classNames={{
-                          // base: "max-w-xs",
                           input: "min-h-32 md:min-h-48",
                         }}
                         minRows={6}
@@ -165,16 +161,22 @@ const Contact = () => {
 
                   <div className="md:flex flex-col justify-between">
                     <div className="lg:absolute top-[-95px] left-0">
-                      <p className="text-center m-auto mb-4 max-w-52 md:text-start ">
+                      <p className="text-center ml-auto mr-auto mb-4 max-w-52 md:text-start md:ml-0 ">
                         4350 Rue Beaubien E, Montreal, QC{" "}
                         <span className="hidden md:inline">
                           <br />
                         </span>
                         H1T 1S9
                       </p>
-                      <p className="mb-4 text-center md:text-start md:mb-6 lg:absolute top-[48px] left-20">
-                        INFO@1855maitres.com
-                      </p>
+                      <div className="flex justify-center mb-4 item-center md:justify-start md:mb-6 lg:absolute top-[48px] left-20">
+                        <Link
+                          href="mailto:info@1855maitres.com"
+                          underline="always"
+                          style={{ color: "#a1a1aa", display: "flex" }}
+                        >
+                          Info@1855maitres.com
+                        </Link>
+                      </div>
                     </div>
                     <div className="flex justify-center">
                       <Button

@@ -1,16 +1,9 @@
-// import React from "react";
 // import { title } from "@/components/primitives";
 // import { useState } from "react";
 import CardBlog from "../CardBlog/CardBlog";
 import { dataBlog } from "./dataBlog";
 import { Link } from "react-router-dom";
-
-interface BlogItem {
-  id: string;
-  title: string;
-  img: string;
-  description: string;
-}
+import { BlogItem } from "@/types/CardBlogProps";
 
 const Blog: React.FC = () => {
   // const [showDetailCard, setShowDetailCard] = useState<boolean>(false);

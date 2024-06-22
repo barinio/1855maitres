@@ -2,25 +2,15 @@ import DefaultLayout from "@/layouts/default";
 import { Card, Image } from "@nextui-org/react";
 import { useParams } from "react-router-dom";
 import { dataBlog } from "../Blog/dataBlog";
-
-interface CardDetailProps {
-  cardItem?: {
-    id: string;
-    title: string;
-    img: string;
-    description: string;
-  } | null;
-}
+import { CardDetailProps } from "@/types/CardDetailProps";
 
 const CardDetail: React.FC<CardDetailProps> = () => {
   const { id } = useParams();
-  console.log("id :>> ", id);
 
   const blogItem = dataBlog.find((item) => item.id === id);
   if (!blogItem) {
     return <div>Blog not found</div>;
   }
-  // console.log("blogItem :>> ", blogItem);
 
   return (
     <DefaultLayout>

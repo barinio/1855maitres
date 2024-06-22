@@ -1,5 +1,6 @@
 // import React from "react";
 import { Card, Image, Button } from "@nextui-org/react";
+import { CardBlogProps } from "@/types/CardBlogProps";
 
 const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
   return (
@@ -39,15 +40,3 @@ const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
 };
 
 export default CardBlog;
-
-interface BlogItem {
-  id: string;
-  title: string;
-  img: string;
-  description: string;
-}
-
-interface CardBlogProps {
-  data: BlogItem;
-  onClickCard: () => void;
-}

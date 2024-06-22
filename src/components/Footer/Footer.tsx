@@ -10,11 +10,15 @@ const Footer = () => {
         aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger
         vos intérêts et droits.
       </p>
-      <Link href="#" underline="always" style={{ color: "#a1a1aa", display: "flex" }}>
+      <Link
+        href="mailto:info@1855maitres.com"
+        underline="always"
+        style={{ color: "#a1a1aa", display: "flex" }}
+      >
         Info@1855maitres.com
       </Link>
       <Link
-        href="#"
+        href="/privacy-information"
         underline="always"
         className="uppercase text-center"
         style={{ color: "#a1a1aa", display: "flex" }}
@@ -22,7 +26,7 @@ const Footer = () => {
         Information on the protection of personal information
       </Link>
       <Link
-        href="#"
+        href="/privacy-policy"
         underline="always"
         className="uppercase"
         style={{ color: "#a1a1aa", display: "flex" }}

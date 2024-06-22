@@ -12,42 +12,36 @@ export const LawsData: LawItem[] = [
     title: "Civil law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: civilLawImg,
-    imgWidth: 465
+    img: civilLawImg
   },
   {
     title: "Criminal and penal law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: criminalAndPenalLawwImg,
-    imgWidth: 510
+    img: criminalAndPenalLawwImg
   },
   {
     title: "Immigration law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: immigrationLawImg,
-    imgWidth: 510
+    img: immigrationLawImg
   },
   {
     title: "Insurance law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: insuranceLawImg,
-    imgWidth: 540
+    img: insuranceLawImg
   },
   {
     title: "Labor and social law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: laborAndSocialLawImg,
-    imgWidth: 530
+    img: laborAndSocialLawImg
   },
   {
     title: "Other type of law",
     description:
       "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-    img: otherTypeOfLawImg,
-    imgWidth: 520
+    img: otherTypeOfLawImg
   }
 ];

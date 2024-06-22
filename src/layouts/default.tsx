@@ -2,6 +2,7 @@ import styles from "./default.module.scss";
 
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/Footer/Footer";
+import Assistant from "@/chatBot/Assistant";
 
 export default function DefaultLayout({
   children,
@@ -11,10 +12,10 @@ export default function DefaultLayout({
   return (
     <div className={`${styles.layout} relative flex flex-col h-screen`}>
       <Navbar />
-      <main className="container mx-auto max-w-[1440px] px-6 flex-grow mt-16">
-        {children}
-      </main>
-      {/* <footer className="w-full flex items-center justify-center py-3"></footer> */}
+      <main className="container mx-auto max-w-7xl px-6 mt-16">{children}</main>
+      <Footer />
+
+      <Assistant />
     </div>
   );
 }

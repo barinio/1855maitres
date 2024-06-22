@@ -1,7 +1,8 @@
-import './Assistant.module.scss';
-import { useState } from 'react';
-import styles from './styles/Assistant.module.scss';
-import Chat from './Chat';
+import { useState } from "react";
+
+import "./Assistant.module.scss";
+import styles from "./styles/Assistant.module.scss";
+import Chat from "./Chat";
 
 function Assistant() {
   const [isChatOpen, setChatOpen] = useState(false);

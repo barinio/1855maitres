@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.appContainer {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.openModalBtn {
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  background-image: linear-gradient(135deg, #e32769 0%, #c20e4d 100%);
+  box-shadow: 0 20px 30px -6px rgba(210, 18, 47, 0.5);
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Dosis', sans-serif;
+  background-color: #ea5455;
+}
+
+.openModalBtn:hover {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.openModalBtn:active {
+  opacity: 0.5;
+}

@@ -16,7 +16,7 @@ const Footer = () => {
       <Link
         href="#"
         underline="always"
-        className="uppercase"
+        className="uppercase text-center"
         style={{ color: "#a1a1aa", display: "flex" }}
       >
         Information on the protection of personal information

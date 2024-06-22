@@ -6,5 +6,6 @@ declare const classNames: {
   readonly titleLawBlock: "titleLawBlock";
   readonly descriptionLawBlock: "descriptionLawBlock";
   readonly btnsWrapper: "btnsWrapper";
+  readonly isEvenImg: "isEvenImg";
 };
 export = classNames;

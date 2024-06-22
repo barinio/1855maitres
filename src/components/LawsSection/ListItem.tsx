@@ -5,14 +5,14 @@ import styles from "./LawsSection.module.scss";
 
 import { LawItemProps } from "@/types/ListItemProps";
 
-const ListItem: React.FC<LawItemProps> = ({ title, description, img, index, imgWidth }) => {
+const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) => {
   const isEven = index % 2 === 0;
 
   const buttonColor = isEven ? "#C20E4D" : "#F96501";
 
   return (
     <li key={title} className={styles.lawContentWrapper}>
-      {!isEven && <img src={img} alt={title} width={imgWidth} />}
+      {!isEven && <img src={img} alt={title} className={styles.isEvenImg} />}
 
       <div className={styles.lawTexttWrapper}>
         <h3 className={styles.titleLawBlock}>{title}</h3>
@@ -41,7 +41,7 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index, imgW
           </Button>
         </div>
       </div>
-      {isEven && <img src={img} alt={title} width={imgWidth} />}
+      {isEven && <img src={img} alt={title} className={styles.isEvenImg} />}
     </li>
   );
 };

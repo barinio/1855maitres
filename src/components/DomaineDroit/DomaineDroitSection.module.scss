@@ -1,5 +1,11 @@
 .domaineDroitSection {
 	margin-top: 75px;
+
+	@media (max-width: 730px) {
+		.verticalCenter {
+			height: 730px;
+		}
+	}
 }
 
 .listCard {
@@ -15,6 +21,7 @@
 }
 .cardWrapper {
 	height: 302px;
+	max-height: 320px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -23,6 +30,9 @@
 	background-color: rgba(117, 117, 138, 0.1);
 	border-radius: 10px;
 	width: 319px;
+	@media (width < 730px) {
+		margin: auto;
+	}
 }
 .headerCard {
 	display: flex;

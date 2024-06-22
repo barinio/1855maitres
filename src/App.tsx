@@ -4,6 +4,9 @@ import Accueil from "@/pages/Accueil/Accueil";
 import APropos from "@/pages/APropos/APropos";
 import Blogue from "@/pages/Blogue/Blogue";
 import Contact from "@/pages/Contact";
+import CardDetail from "@/components/CardBlog/CardDetail";
+import PrivacyInformation from "@/pages/PrivacyInformation";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
 function App() {
   return (

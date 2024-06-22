@@ -1,71 +1,71 @@
 .messageBox {
-  width: 70%;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2d2d2d;
-  padding: 0 15px;
-  border-radius: 10px;
-  border: 1px solid rgb(63, 63, 63);
-  margin: 0;
-  position: absolute;
-  bottom: 55px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 25px;
+	// width: 70%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2d2d2d;
+	padding: 0 15px;
+	border-radius: 10px;
+	border: 1px solid rgb(63, 63, 63);
+	margin: 0;
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 25px;
 }
 
 .form {
-  display: flex;
+	display: flex;
 }
 .messageBox:focus-within {
-  border: 1px solid rgb(110, 110, 110);
+	border: 1px solid rgb(110, 110, 110);
 }
 
 input {
-  background-color: #2d2d2d;
+	background-color: #2d2d2d;
 }
 
 #messageInput {
-  width: 200px;
-  height: 100%;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  padding-left: 10px;
-  color: white;
+	width: 100px;
+	height: 100%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+	color: white;
 }
 
 #messageInput:focus ~ #sendButton svg path,
 #messageInput:valid ~ #sendButton svg path {
-  fill: #3c3c3c;
-  stroke: white;
+	fill: #3c3c3c;
+	stroke: white;
 }
 
 #sendButton {
-  width: fit-content;
-  height: 100%;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
+	width: fit-content;
+	height: 100%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s;
 }
 
 #sendButton svg {
-  height: 18px;
-  transition: all 0.3s;
+	height: 18px;
+	transition: all 0.3s;
 }
 
 #sendButton svg path {
-  transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 #sendButton:hover svg path {
-  fill: #3c3c3c;
-  stroke: white;
+	fill: #3c3c3c;
+	stroke: white;
 }

@@ -1,7 +1,7 @@
 import DefaultLayout from "@/layouts/default";
 import { Card, Image } from "@nextui-org/react";
 import { useParams } from "react-router-dom";
-import { dataBlog } from "../Blog/dataBlog";
+import { dataBlog } from "./dataBlog";
 import { CardDetailProps } from "@/types/CardDetailProps";
 
 const CardDetail: React.FC<CardDetailProps> = () => {
@@ -16,10 +16,10 @@ const CardDetail: React.FC<CardDetailProps> = () => {
     <DefaultLayout>
       <div className="flex items-center justify-center">
         <Card className="p-6  ">
-          <div className="w-full h-full overflow-hidden group">
+          <div className="flex justify-center items-center w-full h-full overflow-hidden place-content-center group">
             <Image
               alt={blogItem.title}
-              className="w-full h-full mb-6 object-contain transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full mb-6 object-contain  transition-transform duration-300 group-hover:scale-110"
               src={blogItem.img}
             />
           </div>

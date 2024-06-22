@@ -7,9 +7,11 @@ import {
   Textarea,
   Select,
   SelectItem,
+  Link,
 } from "@nextui-org/react";
 
 import { useState } from "react";
+import ThankYou from "./ThankYou/ThankYou";
 const subjects = [
   { key: 1, label: "TALK TO A LAWYER FOR 50$" },
   { key: 2, label: "CIVIL RIGHT" },
@@ -27,6 +29,7 @@ const Contact = () => {
     telephone: "",
     comments: "",
   });
+  const [showThankPage, setShowThankPage] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -37,7 +40,6 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    // e.preventDefault();
     console.log(formData);
     setFormData({
       username: "",
@@ -45,6 +47,7 @@ const Contact = () => {
       telephone: "",
       comments: "",
     });
+    setShowThankPage(true);
   };
 
   return (
@@ -52,135 +55,144 @@ const Contact = () => {
       <section className="items-center justify-center md:px-10 lg:w-full lg:px-0">
         <div className="max-w-sm  ml-auto mr-auto md:max-w-2xl lg:max-w-full">
           {/* <h1 className={title()}>Contact</h1> */}
-          <p className="mb-2.5 lg:mb-28">
-            Si vous avez des questions ou si vous souhaitez qu’un de nos avocats
-            vous aide à faire valoir vos droits, veuillez nous envoyer un
-            message. Nous vous répondrons sous peu. Bien que l’information
-            contenue dans le message de réponse qui vous sera acheminé soit de
-            nature juridique, ceci ne constitue pas un avis juridique.
-          </p>
+          {showThankPage ? (
+            <ThankYou />
+          ) : (
+            <>
+              <p className="mb-2.5 lg:mb-28">
+                Si vous avez des questions ou si vous souhaitez qu’un de nos
+                avocats vous aide à faire valoir vos droits, veuillez nous
+                envoyer un message. Nous vous répondrons sous peu. Bien que
+                l’information contenue dans le message de réponse qui vous sera
+                acheminé soit de nature juridique, ceci ne constitue pas un avis
+                juridique.
+              </p>
 
-          <div className="lg:flex justify-between lg:relative">
-            <div>
-              <Card className="p-6 w-full mb-6 md:p-11 lg:w-[696px]">
-                <form
-                // onSubmit={handleSubmit}
-                >
-                  <Input
-                    className="mb-7"
-                    fullWidth
-                    color="default"
-                    size="lg"
-                    placeholder="Full name*"
-                    name="username"
-                    value={formData.username}
-                    onChange={handleChange}
-                  />
-
-                  <Input
-                    className="mb-7"
-                    fullWidth
-                    color="default"
-                    size="lg"
-                    placeholder="Email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-
-                  <Input
-                    className="mb-12"
-                    fullWidth
-                    color="default"
-                    size="lg"
-                    placeholder="Telephone"
-                    name="telephone"
-                    type="telephone"
-                    value={formData.telephone}
-                    onChange={handleChange}
-                  />
-
-                  <Textarea
-                    // className="h-32 md:h-48"
-                    classNames={{
-                      // base: "max-w-xs",
-                      input: "min-h-32 md:min-h-48",
-                    }}
-                    minRows={6}
-                    // isDisabled
-                    // label="Description"
-                    // labelPlacement="outside"
-                    placeholder="Comments"
-                    name="comments"
-                    value={formData.comments}
-                    onChange={handleChange}
-                  />
-                </form>
-              </Card>
-
-              <div className="md:flex justify-between items-end md:mb-24 lg:flex-col lg:items-start lg:gap-12">
+              <div className="lg:flex justify-between lg:relative">
                 <div>
-                  <p className="text-center mb-6 md:mb-2 md:text-left">
-                    Veillez sélectionner une option
-                  </p>
+                  <Card className="p-6 w-full mb-6 md:p-11 lg:w-[696px]">
+                    <form>
+                      <Input
+                        className="mb-7"
+                        fullWidth
+                        color="default"
+                        size="lg"
+                        placeholder="Full name*"
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                      />
 
-                  <Select
-                    className="mb-11 w-full max-w-md md:mb-0 md:w-80"
-                    label="Choose a topic"
-                    labelPlacement="outside"
-                  >
-                    {subjects.map((subject) => (
-                      <SelectItem key={subject.key}>{subject.label}</SelectItem>
-                    ))}
-                  </Select>
+                      <Input
+                        className="mb-7"
+                        fullWidth
+                        color="default"
+                        size="lg"
+                        placeholder="Email"
+                        name="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+
+                      <Input
+                        className="mb-12"
+                        fullWidth
+                        color="default"
+                        size="lg"
+                        placeholder="Telephone"
+                        name="telephone"
+                        type="telephone"
+                        value={formData.telephone}
+                        onChange={handleChange}
+                      />
+
+                      <Textarea
+                        classNames={{
+                          input: "min-h-32 md:min-h-48",
+                        }}
+                        minRows={6}
+                        placeholder="Comments"
+                        name="comments"
+                        value={formData.comments}
+                        onChange={handleChange}
+                      />
+                    </form>
+                  </Card>
+
+                  <div className="md:flex justify-between items-end md:mb-24 lg:flex-col lg:items-start lg:gap-12">
+                    <div>
+                      <p className="text-center mb-6 md:mb-2 md:text-left">
+                        Veillez sélectionner une option
+                      </p>
+
+                      <Select
+                        className="mb-11 w-full max-w-md md:mb-0 md:w-80"
+                        size="md"
+                        label="Commentaire"
+                        labelPlacement="inside"
+                      >
+                        {subjects.map((subject) => (
+                          <SelectItem key={subject.key}>
+                            {subject.label}
+                          </SelectItem>
+                        ))}
+                      </Select>
+                    </div>
+
+                    <div className="flex justify-center">
+                      <Button
+                        className="min-w-44 mb-11 md:mb-0"
+                        onPress={handleSubmit}
+                        type="submit"
+                        size="lg"
+                        color="primary"
+                      >
+                        Envoyer
+                      </Button>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="flex justify-center">
-                  <Button
-                    className="min-w-44 mb-11 md:mb-0"
-                    onPress={handleSubmit}
-                    type="submit"
-                    size="lg"
-                    color="primary"
-                  >
-                    Envoyer
-                  </Button>
+                <div className="md:flex justify-between md:mb-6 lg:flex-col lg:justify-start gap-[73px] ">
+                  <div className="m-auto w-64 h-52 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[570px] lg:h-[506px]">
+                    <GoogleMaps />
+                  </div>
+
+                  <div className="md:flex flex-col justify-between">
+                    <div className="lg:absolute top-[-95px] left-0">
+                      <p className="text-center ml-auto mr-auto mb-4 max-w-52 md:text-start md:ml-0 ">
+                        4350 Rue Beaubien E, Montreal, QC{" "}
+                        <span className="hidden md:inline">
+                          <br />
+                        </span>
+                        H1T 1S9
+                      </p>
+                      <div className="flex justify-center mb-4 item-center md:justify-start md:mb-6 lg:absolute top-[48px] left-20">
+                        <Link
+                          href="mailto:info@1855maitres.com"
+                          underline="always"
+                          style={{ color: "#a1a1aa", display: "flex" }}
+                        >
+                          Info@1855maitres.com
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="flex justify-center">
+                      <Button
+                        className="min-w-52 mb-11 md:mb-0"
+                        type="button"
+                        size="lg"
+                        color="primary"
+                      >
+                        Obtenir des directions
+                      </Button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="md:flex justify-between md:mb-6 lg:flex-col lg:justify-start gap-[73px] ">
-              <div className="m-auto w-64 h-52 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[570px] lg:h-[506px]">
-                <GoogleMaps />
-              </div>
-
-              <div className="md:flex flex-col justify-between">
-                <div className="lg:absolute top-[-95px] left-0">
-                  <p className="text-center m-auto mb-4 max-w-52 md:text-start ">
-                    4350 Rue Beaubien E, Montreal, QC{" "}
-                    <span className="hidden md:inline">
-                      <br />
-                    </span>
-                    H1T 1S9
-                  </p>
-                  <p className="mb-4 text-center md:text-start md:mb-6 lg:absolute top-[48px] left-20">
-                    INFO@1855maitres.com
-                  </p>
-                </div>
-                <div className="flex justify-center">
-                  <Button
-                    className="min-w-52 mb-11 md:mb-0"
-                    type="button"
-                    size="lg"
-                    color="primary"
-                  >
-                    Obtenir des directions
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
+            </>
+          )}
         </div>
       </section>
     </DefaultLayout>

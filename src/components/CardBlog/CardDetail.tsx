@@ -24,7 +24,7 @@ const CardDetail: React.FC<CardDetailProps> = () => {
           <div className="flex justify-center items-center w-full h-full overflow-hidden place-content-center group">
             <Image
               alt={blogItem.title}
-              className="w-full h-full mb-6 object-contain  transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-full mb-6 object-contain "
               src={blogItem.img}
             />
           </div>

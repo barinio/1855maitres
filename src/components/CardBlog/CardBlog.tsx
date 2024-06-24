@@ -17,12 +17,12 @@ const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
           </div>
 
           <h4
-            className="font-bold text-large mb-4 text-center "
+            className="font-bold text-large mb-3 h-[56px] text-center "
             onClick={() => onClickCard()}
           >
             {data.title}
           </h4>
-          <p className="text-left h-28 overflow-hidden text-ellipsis">
+          <p className="text-left h-[122px] mb-2 overflow-hidden text-ellipsis">
             {data.description}
           </p>
           <Button

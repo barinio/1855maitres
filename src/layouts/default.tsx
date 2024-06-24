@@ -12,7 +12,9 @@ export default function DefaultLayout({
   return (
     <div className={`${styles.layout} relative flex flex-col h-screen`}>
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 mt-16">{children}</main>
+      <main className="container mx-auto max-w-[1440px] px-6 mt-16">
+        {children}
+      </main>
       <Footer />
 
       <Assistant />

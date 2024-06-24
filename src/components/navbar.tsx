@@ -6,7 +6,7 @@ import {
   NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem
+  NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
@@ -21,9 +21,9 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="xl:mb-24">
+    <header className="">
       <NextUINavbar
-        maxWidth="xl"
+        maxWidth="2xl"
         position="sticky"
         classNames={{
           item: [
@@ -38,20 +38,26 @@ export const Navbar = () => {
             "data-[active=true]:after:right-0",
             "data-[active=true]:after:h-[2px]",
             "data-[active=true]:after:rounded-[2px]",
-            "data-[active=true]:after:bg-foreground"
-          ]
+            "data-[active=true]:after:bg-foreground",
+          ],
         }}
       >
         <NavbarContent
-          className="hidden sm:flex basis-1/5 sm:basis-full xl:mt-24 "
+          className="hidden sm:flex basis-1/5 sm:basis-full "
           style={{ justifyContent: "space-between" }}
         >
           <Logo />
           <div className="hidden sm:flex justify-start items-center md:gap-12 sm:gap-5">
             {siteConfig.navItems.map((item) => (
-              <NavbarItem key={item.href} isActive={location.pathname === item.href}>
+              <NavbarItem
+                key={item.href}
+                isActive={location.pathname === item.href}
+              >
                 <Link
-                  className={clsx(linkStyles({ color: "foreground" }), "md:text-lg sm:text-base")}
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "md:text-lg sm:text-base"
+                  )}
                   color="foreground"
                   href={item.href}
                 >
@@ -59,7 +65,12 @@ export const Navbar = () => {
                 </Link>
               </NavbarItem>
             ))}
-            <Button variant="light" style={{ padding: "0" }} size="sm" className="sm:text-base">
+            <Button
+              variant="light"
+              style={{ padding: "0" }}
+              size="sm"
+              className="sm:text-base"
+            >
               English
             </Button>
             <ThemeSwitch />
@@ -80,7 +91,10 @@ export const Navbar = () => {
         <NavbarMenu>
           <div className="mx-4 mt-2 flex flex-col gap-2 sm:gap-5 sm:text-base">
             {siteConfig.navItems.map((item, index) => (
-              <NavbarMenuItem key={`${item}-${index}`} isActive={location.pathname === item.href}>
+              <NavbarMenuItem
+                key={`${item}-${index}`}
+                isActive={location.pathname === item.href}
+              >
                 <Link color="foreground" href={item.href} size="lg">
                   {item.label}
                 </Link>

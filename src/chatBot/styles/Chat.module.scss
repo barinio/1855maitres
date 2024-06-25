@@ -19,6 +19,7 @@
 	display: flex;
 	align-items: center;
 	margin: 5px 0;
+	// margin-bottom: 20px;
 }
 
 .divChatScreen {
@@ -27,12 +28,29 @@
 	border-radius: 12px;
 	// background: var(--Light-Gray-0, #dadae8);
 	margin: auto;
-	max-height: 450px;
+	max-height: 420px;
 	overflow-y: auto;
-	align-items: flex-start;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	&::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgb(68, 218, 151);
+		border-radius: 6px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: #f96501;
+	}
 }
 
 .button {
@@ -102,11 +120,13 @@
 }
 
 .message.user {
-	width: 70%;
+	min-width: 120px;
+	width: 100%;
+
 	background-color: #44da977d;
-	align-self: flex-end;
 	margin-left: auto;
-	margin-right: 0;
+	margin-right: -50%;
+	align-self: flex-end;
 }
 
 .message.server {

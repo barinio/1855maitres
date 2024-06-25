@@ -9,7 +9,11 @@ import icon from "../../images/criminal-penal-law.svg";
 import styles from "./DomaineDroitSection.module.scss";
 import { Data } from "./data";
 
+import useDarkMode from "@/hooks/useDarkMode";
+
 const DomaineDroitSection = () => {
+  const isDark = useDarkMode();
+
   return (
     <section className={styles.domaineDroitSection}>
       <h2 className="title-hidden">Domaine de droit recherché</h2>
@@ -56,10 +60,10 @@ const DomaineDroitSection = () => {
                     as={Link}
                     color="default"
                     variant="solid"
-                    className="text-zinc-400"
+                    className="text-zinc-400 "
                     style={{
-                      border: "1px solid zinc-700",
-                      backgroundColor: "rgba(63, 63, 70, 0.4)"
+                      border: `1px solid ${isDark ? "zinc-700" : "#3F3F46"}`,
+                      backgroundColor: isDark ? "rgba(63, 63, 70, 0.4)" : "rgba(63, 63, 70, 0.9)"
                     }}
                   >
                     Rendez-vous

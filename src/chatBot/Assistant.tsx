@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./Assistant.module.scss";
+// import "./styles/Assistant.module.scss";
 import styles from "./styles/Assistant.module.scss";
 import Chat from "./Chat";
 

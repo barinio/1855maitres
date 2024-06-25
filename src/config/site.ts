@@ -5,76 +5,22 @@ export const siteConfig = {
   description: "Vous cherchez un avocat? Ne le cherchez plus! 1-855-MAÎTRES",
   navItems: [
     {
-      label: "Accueil",
+      label: "home",
       href: "/"
     },
     {
-      label: "Å propos",
+      label: "about",
       href: "/a-propos"
     },
     {
-      label: "Blogue",
+      label: "blog",
       href: "/blogue"
     },
     {
-      label: "Contact",
+      label: "contact",
       href: "/contact"
     }
   ],
-  navMenuItems: [
-    {
-      label: "Accueil",
-      href: "/"
-    },
-    {
-      label: "Å propos",
-      href: "/a-propos"
-    },
-    {
-      label: "Blogue",
-      href: "/blogue"
-    },
-    {
-      label: "Contact",
-      href: "/contact"
-    }
-    // {
-    //   label: "Profile",
-    //   href: "/profile"
-    // },
-    // {
-    //   label: "Dashboard",
-    //   href: "/dashboard"
-    // },
-    // {
-    //   label: "Projects",
-    //   href: "/projects"
-    // },
-    // {
-    //   label: "Team",
-    //   href: "/team"
-    // },
-    // {
-    //   label: "Calendar",
-    //   href: "/calendar"
-    // },
-    // {
-    //   label: "Settings",
-    //   href: "/settings"
-    // },
-    // {
-    //   label: "Help & Feedback",
-    //   href: "/help-feedback"
-    // },
-    // {
-    //   label: "Logout"
-    // }
-  ],
-  links: {
-    // github: "https://github.com/nextui-org/nextui",
-    // twitter: "https://twitter.com/getnextui",
-    // docs: "https://nextui-docs-v2.vercel.app",
-    // discord: "https://discord.gg/9b6yyZKmH4",
-    // sponsor: "https://patreon.com/jrgarciadev"
-  }
+  navMenuItems: [],
+  links: {}
 };

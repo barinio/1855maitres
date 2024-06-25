@@ -10,14 +10,17 @@ import {
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
-import { Button } from "@nextui-org/button";
+import { useTranslation } from "react-i18next";
 
 import Logo from "./Logo";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
+import SwitcherLanguage from "@/i18n/SwitcherLanguage";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
+
   const location = useLocation();
 
   return (
@@ -56,13 +59,11 @@ export const Navbar = () => {
                   color="foreground"
                   href={item.href}
                 >
-                  {item.label}
+                  {t(`${item.label}`)}
                 </Link>
               </NavbarItem>
             ))}
-            <Button variant="light" style={{ padding: "0" }} size="sm" className="sm:text-base">
-              English
-            </Button>
+            <SwitcherLanguage />
             <ThemeSwitch />
           </div>
         </NavbarContent>
@@ -73,6 +74,7 @@ export const Navbar = () => {
         >
           <Logo />
           <NavbarContent className="sm:hidden basis-1 pr-4" justify="end">
+            <SwitcherLanguage />
             <ThemeSwitch />
             <NavbarMenuToggle />
           </NavbarContent>
@@ -83,7 +85,7 @@ export const Navbar = () => {
             {siteConfig.navItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`} isActive={location.pathname === item.href}>
                 <Link color="foreground" href={item.href} size="lg">
-                  {item.label}
+                  {t(`${item.label}`)}
                 </Link>
               </NavbarMenuItem>
             ))}

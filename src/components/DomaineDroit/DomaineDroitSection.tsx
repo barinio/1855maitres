@@ -49,7 +49,6 @@ const DomaineDroitSection = () => {
                   <div className={styles.wrapperIcon}>
                     <img src={icon} alt="svg" width="25" />
                   </div>
-                  {/* <h3 className={`${styles.titleCard} uppercase font-bold`}>{title}</h3> */}
                   <h3 className="uppercase font-bold">{title}</h3>
                 </div>
                 <p className={styles.descriptionCard}>{description}</p>

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link, Button } from "@nextui-org/react";
 
 import styles from "./HeroSection.module.scss";
@@ -7,6 +8,7 @@ import heroImgLight from "@/images/hero-light.png";
 import useDarkMode from "@/hooks/useDarkMode";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const isDark = useDarkMode();
 
   return (
@@ -17,9 +19,7 @@ const HeroSection = () => {
           backgroundImage: `url('${isDark ? heroImgDark : heroImgLight}')`
         }}
       />
-      <h1 className={`${styles.titlePage} uppercase text-4xl font-bold `}>
-        Legal solutions adapted to your needs
-      </h1>
+      <h1 className={`${styles.titlePage} uppercase text-4xl font-bold `}>{t("heroH1")}</h1>
       <div className={styles.wrapperHeroContent}>
         <a
           className={`${styles.phoneLink} light:text-[#030508] dark:text-[#ecedee]`}
@@ -36,14 +36,12 @@ const HeroSection = () => {
           variant="solid"
           className={styles.btnLink}
         >
-          Prendre un rendez-vous
+          {t("heroBtn")}
         </Button>
 
         <div className={styles.wrapperHeroText}>
           <p style={{ fontSize: "16px", color: isDark ? "#a1a1aa" : "#000000" }}>
-            Our goal is to make legal services accessible to citizens throughout Quebec. If you are
-            looking to assert your rights in one of the many areas of law, you can easily contact us
-            by dialing our unique number,{" "}
+            {t("heroDescription")}
             <Link href="#" style={{ color: isDark ? "#a1a1aa" : "#000000" }} underline="always">
               1-855-MAÎTRES
             </Link>

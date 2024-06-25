@@ -4,7 +4,7 @@ declare const classNames: {
   readonly phoneLink: "phoneLink";
   readonly btnLink: "btnLink";
   readonly wrapperHeroText: "wrapperHeroText";
-  readonly heroText: "heroText";
-  readonly heroImg: "heroImg";
+  readonly heroImgLight: "heroImgLight";
+  readonly heroImgDark: "heroImgDark";
 };
 export = classNames;

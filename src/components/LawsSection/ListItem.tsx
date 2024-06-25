@@ -24,7 +24,7 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
             as={Link}
             variant="solid"
             className="uppercase underline"
-            style={{ backgroundColor: buttonColor }}
+            style={{ backgroundColor: buttonColor, color: "#FFFFFF" }}
           >
             By telephone
           </Button>

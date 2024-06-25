@@ -9,39 +9,33 @@ import { LawItem } from "@/types/ListItemProps";
 
 export const LawsData: LawItem[] = [
   {
-    title: "Civil law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle1",
+    description: "lawsDescription",
     img: civilLawImg
   },
   {
-    title: "Criminal and penal law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle2",
+    description: "lawsDescription",
     img: criminalAndPenalLawwImg
   },
   {
-    title: "Immigration law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle3",
+    description: "lawsDescription",
     img: immigrationLawImg
   },
   {
-    title: "Insurance law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle4",
+    description: "lawsDescription",
     img: insuranceLawImg
   },
   {
-    title: "Labor and social law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle5",
+    description: "lawsDescription",
     img: laborAndSocialLawImg
   },
   {
-    title: "Other type of law",
-    description:
-      "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    title: "lawsTitle6",
+    description: "lawsDescription",
     img: otherTypeOfLawImg
   }
 ];

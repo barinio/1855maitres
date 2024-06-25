@@ -52,7 +52,7 @@ export const dataBlog = [
       },
       {
         title: "Towards a Responsible Future",
-        text: "Article 1457, in its wisdom and simplicity, reminds us of the importance of vigilance and prudence in our actions. It embodies the idea that individual freedom finds its limit in respect for the rights of others. As a society, it invites us to pursue an ideal of respectful and responsible coexistence. // Every day, as a lawyer, I see the impact this article has on people’s lives. It is not just a legal rule but a principle of life, a guide towards a fairer world. Whether you are the victim of harm or are seeking to understand your obligations, remember that behind legal terms there is a fundamental quest for justice and social harmony. // Article 1457 of the Civil Code of Quebec is more than a legal provision; it is a pillar on which the balance of our society rests. By understanding and applying it, we all move forward together towards a future where responsibility and mutual respect are the cornerstones of our coexistence.",
+        text: "Article 1457, in its wisdom and simplicity, reminds us of the importance of vigilance and prudence in our actions. It embodies the idea that individual freedom finds its limit in respect for the rights of others. As a society, it invites us to pursue an ideal of respectful and responsible coexistence. Every day, as a lawyer, I see the impact this article has on people’s lives. It is not just a legal rule but a principle of life, a guide towards a fairer world. Whether you are the victim of harm or are seeking to understand your obligations, remember that behind legal terms there is a fundamental quest for justice and social harmony. Article 1457 of the Civil Code of Quebec is more than a legal provision; it is a pillar on which the balance of our society rests. By understanding and applying it, we all move forward together towards a future where responsibility and mutual respect are the cornerstones of our coexistence.",
       },
     ],
   },
@@ -61,7 +61,7 @@ export const dataBlog = [
     title: "THE PRESCRIPTION",
     img: img3,
     description:
-      "The limitation period for a personal law action is a complex and essential subject in the legal field, affecting the ability of individuals to take legal action to assert their rights. This article explores the fundamental principles of prescription in personal law, its practical implications, as well as its exceptions and particularities according to Quebec law. ////   ////    ////   ////  ",
+      "The limitation period for a personal law action is a complex and essential subject in the legal field, affecting the ability of individuals to take legal action to assert their rights. This article explores the fundamental principles of prescription in personal law, its practical implications, as well as its exceptions and particularities according to Quebec law.",
     fullDescription: [
       {
         title: "What is Prescription in Personal Law?",
@@ -115,11 +115,11 @@ export const dataBlog = [
       },
       {
         title: "Legal Services in Civil Law with 1-855 MASTERS",
-        text: "Our team of experienced lawyers at 1-855 MAÎTRES offers a full range of legal services in Civil Law to support you in various aspects of your legal life, including:                                                                          # 1 Contracts and Obligations: Drafting, interpretation and disputes related to contracts.                                                                          # 2 Civil Liability: Defense of rights in the event of damage suffered.             # 3 Civil Disputes: Resolution of disputes before civil courts.                     # 4 Inheritance: Advice and assistance in inheritance matters.",
+        text: "Our team of experienced lawyers at 1-855 MAÎTRES offers a full range of legal services in Civil Law to support you in various aspects of your legal life, including: 1 Contracts and Obligations: Drafting, interpretation and disputes related to contracts. 2 Civil Liability: Defense of rights in the event of damage suffered. 3 Civil Disputes: Resolution of disputes before civil courts. 4 Inheritance: Advice and assistance in inheritance matters.",
       },
       {
         title: "Why Choose 1-855 MAÎTRES for Your Civil Law Matters?",
-        text: "# 1 Specialized Expertise: Our lawyers specializing in Civil Law have in-depth knowledge of the laws and regulations that govern this complex area.                                                                               # 2 Personalized Approach: Each case is unique. We take a personalized approach to understand your specific needs and develop tailor-made solutions.                   # 3Transparency and Communication: We believe in transparent communication with our customers. You will be informed of every step of the legal process.                 # 4Financial Accessibility: Justice must be accessible to all. We offer affordable consultations to help you get the legal assistance you need.",
+        text: "Specialized Expertise: Our lawyers specializing in Civil Law have in-depth knowledge of the laws and regulations that govern this complex area. 2 Personalized Approach: Each case is unique. We take a personalized approach to understand your specific needs and develop tailor-made solutions. 3 Transparency and Communication: We believe in transparent communication with our customers. You will be informed of every step of the legal process. 4Financial Accessibility: Justice must be accessible to all. We offer affordable consultations to help you get the legal assistance you need.",
       },
       {
         title: "Contact 1-855 MAÎTRES for Your Civil Law Needs",

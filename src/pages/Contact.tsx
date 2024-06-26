@@ -11,18 +11,13 @@ import {
 } from "@nextui-org/react";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ThankYou from "./ThankYou/ThankYou";
-const subjects = [
-  { key: 1, label: "TALK TO A LAWYER FOR 50$" },
-  { key: 2, label: "CIVIL RIGHT" },
-  { key: 3, label: "INSURANCE LAW" },
-  { key: 4, label: "CRIMINAL AND PENAL LAW" },
-  { key: 5, label: "LABOUR LAW AND SOCIAL LAW" },
-  { key: 6, label: "IMMIGRATION LAW" },
-  { key: 7, label: "OTHER TYPE OF LAW" },
-];
+import { dataSelect } from "@/data/dataSelect";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -59,14 +54,7 @@ const Contact = () => {
             <ThankYou />
           ) : (
             <>
-              <p className="mb-2.5 lg:mb-28">
-                Si vous avez des questions ou si vous souhaitez qu’un de nos
-                avocats vous aide à faire valoir vos droits, veuillez nous
-                envoyer un message. Nous vous répondrons sous peu. Bien que
-                l’information contenue dans le message de réponse qui vous sera
-                acheminé soit de nature juridique, ceci ne constitue pas un avis
-                juridique.
-              </p>
+              <p className="mb-2.5 lg:mb-28 ">{t("contactText")}</p>
 
               <div className="lg:flex justify-between lg:relative">
                 <div>
@@ -77,7 +65,7 @@ const Contact = () => {
                         fullWidth
                         color="default"
                         size="lg"
-                        placeholder="Full name*"
+                        placeholder={t("inputName")}
                         name="username"
                         value={formData.username}
                         onChange={handleChange}
@@ -88,7 +76,7 @@ const Contact = () => {
                         fullWidth
                         color="default"
                         size="lg"
-                        placeholder="Email"
+                        placeholder={t("inputMail")}
                         name="email"
                         type="email"
                         value={formData.email}
@@ -100,7 +88,7 @@ const Contact = () => {
                         fullWidth
                         color="default"
                         size="lg"
-                        placeholder="Telephone"
+                        placeholder={t("inputTel")}
                         name="telephone"
                         type="telephone"
                         value={formData.telephone}
@@ -112,7 +100,7 @@ const Contact = () => {
                           input: "min-h-32 md:min-h-48",
                         }}
                         minRows={6}
-                        placeholder="Comments"
+                        placeholder={t("inputCom")}
                         name="comments"
                         value={formData.comments}
                         onChange={handleChange}
@@ -123,18 +111,18 @@ const Contact = () => {
                   <div className="md:flex justify-between items-end md:mb-24 lg:flex-col lg:items-start lg:gap-12">
                     <div>
                       <p className="text-center mb-6 md:mb-2 md:text-left">
-                        Veillez sélectionner une option
+                        {t("titleSelect")}
                       </p>
 
                       <Select
                         className="mb-11 w-full max-w-md md:mb-0 md:w-80"
                         size="md"
-                        label="Commentaire"
+                        label={t("nameSelect")}
                         labelPlacement="inside"
                       >
-                        {subjects.map((subject) => (
-                          <SelectItem key={subject.key}>
-                            {subject.label}
+                        {dataSelect.map((item) => (
+                          <SelectItem key={item.key}>
+                            {t(`${item.label}`)}
                           </SelectItem>
                         ))}
                       </Select>
@@ -148,7 +136,7 @@ const Contact = () => {
                         size="lg"
                         color="primary"
                       >
-                        Envoyer
+                        {t("contactBtn1")}
                       </Button>
                     </div>
                   </div>
@@ -162,7 +150,7 @@ const Contact = () => {
                   <div className="md:flex flex-col justify-between">
                     <div className="lg:absolute top-[-95px] left-0">
                       <p className="text-center ml-auto mr-auto mb-4 max-w-52 md:text-start md:ml-0 ">
-                        4350 Rue Beaubien E, Montreal, QC{" "}
+                        {t("contactAdress")}
                         <span className="hidden md:inline">
                           <br />
                         </span>
@@ -185,7 +173,7 @@ const Contact = () => {
                         size="lg"
                         color="primary"
                       >
-                        Obtenir des directions
+                        {t("contactBtn2")}
                       </Button>
                     </div>
                   </div>

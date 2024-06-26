@@ -46,7 +46,8 @@ export const en = {
   // Footer
   footerText:
     "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-  linkPrivacyInformation: "Information on the protection of personal information",
+  linkPrivacyInformation:
+    "Information on the protection of personal information",
   linkPrivacyPolicy: "Privacy policy",
   allRightsReserved: "All rights reserved",
 
@@ -65,7 +66,8 @@ export const en = {
     "If you are looking for a solution to your legal problems, contact us without delay. With us, your interests will be defended with a Master Hand!",
 
   // PrivacyInformation
-  privacyInformationH1: "Responsible for access to documents or protection of personal information",
+  privacyInformationH1:
+    "Responsible for access to documents or protection of personal information",
   //
 
   privacyInformationP1:
@@ -106,5 +108,25 @@ export const en = {
   privacyPolicyP2_8:
     "1-855-Maîtres reserves the right to modify this policy at any time. Note that the latest version of our policy is displayed on this page.",
 
-  privacyOfficerText: "Privacy Officer"
+  privacyOfficerText: "Privacy Officer",
+
+  //contact
+  contactText:
+    "If you have any questions or would like one of our attorneys to help you assert your rights, please send us a message. We will respond to you shortly. Although the information contained in the response message sent to you is of a legal nature, this does not constitute legal advice.",
+  inputName: "Full name",
+  inputMail: "E-mail",
+  inputTel: "Telephone",
+  inputCom: "Comments",
+  titleSelect: "Please select one option",
+  nameSelect: "Сhoose a topic",
+  label1: "TALK TO A LAWYER FOR 50$",
+  label2: "CIVIL RIGHT",
+  label3: "INSURANCE LAW",
+  label4: "CRIMINAL AND PENAL LAW",
+  label5: "LABOUR LAW AND SOCIAL LAW",
+  label6: "IMMIGRATION LAW",
+  label7: "OTHER TYPE OF LAW",
+  contactBtn1: "Send",
+  contactBtn2: "Get directions",
+  contactAdress: "4350 Rue Beaubien E, Montreal, QC",
 };

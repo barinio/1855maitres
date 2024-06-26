@@ -46,7 +46,8 @@ export const fr = {
   // Footer
   footerText:
     "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-  linkPrivacyInformation: "Information sur la protection des renseignements personnels",
+  linkPrivacyInformation:
+    "Information sur la protection des renseignements personnels",
   linkPrivacyPolicy: "Politique de confidentialité",
   allRightsReserved: "All rights reserved",
 
@@ -84,7 +85,8 @@ export const fr = {
   privacyPolicyH2_2: "2. Devoir de prudence et de discrétion",
   privacyPolicyH2_3: "3. Obligation de protection",
   privacyPolicyH2_4: "4. Gestion des données clients et employés",
-  privacyPolicyH2_5: "5. Conservation et communication des renseignements personnels",
+  privacyPolicyH2_5:
+    "5. Conservation et communication des renseignements personnels",
   privacyPolicyH2_6: "6. Consultation et modification",
   privacyPolicyH2_7: "7. Plaintes et questions",
   privacyPolicyH2_8: "8. Modifications de la politique",
@@ -106,5 +108,25 @@ export const fr = {
   privacyPolicyP2_8:
     "1-855-Maîtres se réserve le droit de modifier cette politique à tout moment. Notez que la dernière version de notre politique est affichée sur cette page.",
 
-  privacyOfficerText: "Responsable de la protection de la vie privée"
+  privacyOfficerText: "Responsable de la protection de la vie privée",
+
+  //contact
+  contactText:
+    "Si vous avez des questions ou si vous souhaitez qu’un de nos avocats vous aide à faire valoir vos droits, veuillez nous envoyer un message. Nous vous répondrons sous peu. Bien que l’information contenue dans le message de réponse qui vous sera acheminé soit de nature juridique, ceci ne constitue pas un avis juridique.",
+  inputName: "Nom complet",
+  inputMail: "Courriel",
+  inputTel: "Téléphone",
+  inputCom: "Commentaire",
+  titleSelect: "Veillez sélectionner une option",
+  nameSelect: "Сhoisir un sujet",
+  label1: "PARLEZ À UN AVOCAT POUR 50$",
+  label2: "DROIT CIVIL",
+  label3: "DROIT DES ASSURANCES",
+  label4: "DROIT CRIMINEL ET PÉNAL",
+  label5: "DROIT DU TRAVAIL ET DROIT SOCIAL",
+  label6: "DROIT DE L'IMMIGRATION",
+  label7: "AUTRE TYPE DE DROIT",
+  contactBtn1: "Envoyer",
+  contactBtn2: "Obtenir des directions",
+  contactAdress: "4350 Rue Beaubien E, Montréal, QC",
 };

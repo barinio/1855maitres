@@ -23,7 +23,7 @@ const CardDetail: React.FC<CardDetailProps> = () => {
 
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center flex-col">
+      <div className="flex items-center pt-5 justify-center flex-col">
         <Card className="p-6  ">
           <div className="flex justify-center items-center w-full h-full overflow-hidden place-content-center group">
             <Image

@@ -19,7 +19,7 @@ const Blogue: React.FC = () => {
   return (
     <DefaultLayout>
       <div>
-        <section className="">
+        <section className="pt-5">
           <div className="">
             {/* <h1 className={title()}> blogggggg</h1> */}
             {/* {showDetailCard ? (

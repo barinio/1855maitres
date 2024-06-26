@@ -129,4 +129,12 @@ export const en = {
   contactBtn1: "Send",
   contactBtn2: "Get directions",
   contactAdress: "4350 Rue Beaubien E, Montreal, QC",
+
+  //thanck you
+  thankYouTitle: "Application sent successfully",
+  thankYouText:
+    "Your application has been successfully sent. It will be processed soon and we will contact you shortly.",
+  thankYouBtn1: "Read blog",
+  thankYouBtn2: "Go to Home page",
+  thankYouBtn3: "Сall us",
 };

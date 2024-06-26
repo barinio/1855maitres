@@ -129,4 +129,12 @@ export const fr = {
   contactBtn1: "Envoyer",
   contactBtn2: "Obtenir des directions",
   contactAdress: "4350 Rue Beaubien E, Montréal, QC",
+
+  //thanck you
+  thankYouTitle: "Candidature envoyée avec succès",
+  thankYouText:
+    "Votre candidature a été envoyée avec succès. Elle sera traitée prochainement et nous vous contacterons sous peu.",
+  thankYouBtn1: "Lire le blog",
+  thankYouBtn2: "Aller à la page d'accueil",
+  thankYouBtn3: "Appelez-nous",
 };

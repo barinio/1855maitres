@@ -1,15 +1,14 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "@nextui-org/react";
 
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footerSection}>
-      <p className={styles.footerText}>
-        Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une
-        aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger
-        vos intérêts et droits.
-      </p>
+      <p className={styles.footerText}>{t("footerText")}</p>
       <Link
         href="mailto:info@1855maitres.com"
         underline="always"
@@ -23,7 +22,7 @@ const Footer = () => {
         className="uppercase text-center"
         style={{ color: "#a1a1aa", display: "flex" }}
       >
-        Information on the protection of personal information
+        {t("linkPrivacyInformation")}
       </Link>
       <Link
         href="/privacy-policy"
@@ -31,14 +30,14 @@ const Footer = () => {
         className="uppercase"
         style={{ color: "#a1a1aa", display: "flex" }}
       >
-        Privacy policy
+        {t("linkPrivacyPolicy")}
       </Link>
-      <p>
+      <p className="capitalize">
         ©{" "}
         <Link href="#" underline="always" style={{ color: "#a1a1aa", display: "inline-block" }}>
           1-855-MAÎTRES
         </Link>{" "}
-        | All Rights Reserved.
+        | {t("allRightsReserved")}.
       </p>
     </footer>
   );

@@ -19,7 +19,7 @@ const HeroSection = () => {
           backgroundImage: `url('${isDark ? heroImgDark : heroImgLight}')`
         }}
       />
-      <h1 className={`${styles.titlePage} uppercase text-4xl font-bold `}>{t("heroH1")}</h1>
+      <h1 className={`${styles.titlePage} uppercase text-4xl font-bold `}>{t("homeHeroH1")}</h1>
       <div className={styles.wrapperHeroContent}>
         <a
           className={`${styles.phoneLink} light:text-[#030508] dark:text-[#ecedee]`}
@@ -36,12 +36,12 @@ const HeroSection = () => {
           variant="solid"
           className={styles.btnLink}
         >
-          {t("heroBtn")}
+          {t("homeHeroBtn")}
         </Button>
 
         <div className={styles.wrapperHeroText}>
           <p style={{ fontSize: "16px", color: isDark ? "#a1a1aa" : "#000000" }}>
-            {t("heroDescription")}
+            {t("homeHeroDescription")}
             <Link href="#" style={{ color: isDark ? "#a1a1aa" : "#000000" }} underline="always">
               1-855-MAÎTRES
             </Link>

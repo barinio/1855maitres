@@ -1,10 +1,9 @@
-import civilLawImg from "../../images/civil-law.png";
-import criminalAndPenalLawwImg from "../../images/criminal-and-penal-law.png";
-import immigrationLawImg from "../../images/immigration-to-canada.png";
-import insuranceLawImg from "../../images/insurance-law.png";
-import laborAndSocialLawImg from "../../images/labor-and-social-law.png";
-import otherTypeOfLawImg from "../../images/area-of-law.png";
-
+import civilLawImg from "@/images/civil-law.png";
+import criminalAndPenalLawwImg from "@/images/criminal-and-penal-law.png";
+import immigrationLawImg from "@/images/immigration-to-canada.png";
+import insuranceLawImg from "@/images/insurance-law.png";
+import laborAndSocialLawImg from "@/images/labor-and-social-law.png";
+import otherTypeOfLawImg from "@/images/area-of-law.png";
 import { LawItem } from "@/types/ListItemProps";
 
 export const LawsData: LawItem[] = [

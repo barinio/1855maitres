@@ -2,7 +2,7 @@ import DefaultLayout from "@/layouts/default";
 // import { title } from "@/components/primitives";
 // import { useState } from "react";
 import CardBlog from "../../components/CardBlog/CardBlog";
-import { dataBlog } from "../../components/CardBlog/dataBlog";
+import { dataBlog } from "../../data/dataBlog";
 import { Link } from "react-router-dom";
 import { BlogItem } from "@/types/CardBlogProps";
 

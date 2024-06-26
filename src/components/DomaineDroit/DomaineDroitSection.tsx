@@ -3,13 +3,12 @@ import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel } from "swiper/modules";
+
 import "swiper/scss";
-
-import icon from "../../images/criminal-penal-law.svg";
-
 import styles from "./DomaineDroitSection.module.scss";
-import { domaineDroitData } from "./data";
 
+import icon from "@/images/criminal-penal-law.svg";
+import { domaineDroitData } from "@/data/domaineDroitData";
 import useDarkMode from "@/hooks/useDarkMode";
 
 const DomaineDroitSection = () => {

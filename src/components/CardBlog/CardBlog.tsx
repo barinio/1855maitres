@@ -1,5 +1,6 @@
-// import React from "react";
+import React from "react";
 import { Card, Image, Button } from "@nextui-org/react";
+
 import { CardBlogProps } from "@/types/CardBlogProps";
 
 const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
@@ -18,19 +19,14 @@ const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
 
           <h4
             className="font-bold text-large mb-3 h-[56px] text-center "
-            onClick={() => onClickCard()}
+            // onClick={() => onClickCard()}
           >
             {data.title}
           </h4>
           <p className="text-left h-[122px] mb-2 overflow-hidden text-ellipsis">
             {data.description}
           </p>
-          <Button
-            onClick={() => onClickCard()}
-            className="ml-auto"
-            size="sm"
-            variant="light"
-          >
+          <Button onClick={onClickCard} className="ml-auto" size="sm" variant="light">
             Read more
           </Button>
         </Card>

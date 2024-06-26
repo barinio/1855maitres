@@ -1,8 +1,9 @@
-import DefaultLayout from "@/layouts/default";
 import { Card, Image, Button } from "@nextui-org/react";
 import { useNavigate, useParams } from "react-router-dom";
-import { dataBlog } from "./dataBlog";
+
+import DefaultLayout from "@/layouts/default";
 import { CardDetailProps } from "@/types/CardDetailProps";
+import { dataBlog } from "@/data/dataBlog";
 
 const CardDetail: React.FC<CardDetailProps> = () => {
   const { id } = useParams();
@@ -13,6 +14,7 @@ const CardDetail: React.FC<CardDetailProps> = () => {
   };
 
   const blogItem = dataBlog.find((item) => item.id === id);
+
   if (!blogItem) {
     return <div>Blog not found</div>;
   }
@@ -29,17 +31,15 @@ const CardDetail: React.FC<CardDetailProps> = () => {
             />
           </div>
 
-          <h3 className="font-bold text-3xl mb-8 text-center ">
-            {blogItem.title}
-          </h3>
+          <h3 className="font-bold text-3xl mb-8 text-center ">{blogItem.title}</h3>
 
           <p className="text-left text-xl overflow-hidden text-ellipsis mb-6">
             {blogItem.description}
           </p>
-          {blogItem.fullDescription.map((item) => (
-            <div>
-              <h3 className="mb-6 text-2xl font-medium ">{item.title}</h3>
-              <p className="mb-6 text-xl font-normal">{item.text}</p>
+          {blogItem.fullDescription.map(({ title, text }) => (
+            <div key={title}>
+              <h3 className="mb-6 text-2xl font-medium ">{title}</h3>
+              <p className="mb-6 text-xl font-normal">{text}</p>
             </div>
           ))}
         </Card>

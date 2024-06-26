@@ -1,6 +1,7 @@
+import { LawsData } from "../../data/lawsData";
+
 import styles from "./LawsSection.module.scss";
 import ListItem from "./ListItem";
-import { LawsData } from "./lawsData";
 
 const LawsSection = () => {
   return (

@@ -28,6 +28,7 @@ export const Navbar = () => {
       <NextUINavbar
         maxWidth="2xl"
         position="sticky"
+        // className="w-full"
         classNames={{
           item: [
             "flex",
@@ -47,7 +48,7 @@ export const Navbar = () => {
         style={{ backgroundColor: "transparent" }}
       >
         <NavbarContent
-          className="hidden sm:flex basis-1/5 sm:basis-full "
+          className="hidden sm:flex basis-1/5 sm:basis-full 2xl:px-12"
           style={{ justifyContent: "space-between" }}
         >
           <Logo />

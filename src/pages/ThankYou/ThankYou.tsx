@@ -1,8 +1,10 @@
 import { Card, CardBody, Button } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 const ThankYou = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleClickBlog = () => {
     navigate("/blogue");
@@ -20,11 +22,10 @@ const ThankYou = () => {
     <Card className="ml-auto mr-auto max-w-80 p-8">
       <CardBody>
         <h2 className="mb-5 text-center text-emerald-500">
-          Application sent successfully
+          {t("thankYouTitle")}
         </h2>
         <p className="mb-6 text-justify text-xs font-light leading-5 tracking-wider">
-          Your application has been successfully sent. It will be processed soon
-          and we will contact you shortly.
+          {t("thankYouText")}
         </p>
         <div className="flex flex-col gap-5 items-center ">
           <Button
@@ -34,7 +35,7 @@ const ThankYou = () => {
             size="md"
             color="default"
           >
-            Read blog
+            {t("thankYouBtn1")}
           </Button>
           <Button
             onClick={handleClickHome}
@@ -43,7 +44,7 @@ const ThankYou = () => {
             size="md"
             color="default"
           >
-            Go to Home page
+            {t("thankYouBtn2")}
           </Button>
           <Button
             onClick={handleClickCallUs}
@@ -52,7 +53,7 @@ const ThankYou = () => {
             size="md"
             color="default"
           >
-            Сall us
+            {t("thankYouBtn3")}
           </Button>
         </div>
       </CardBody>

@@ -46,7 +46,8 @@ export const fr = {
   // Footer
   footerText:
     "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-  linkPrivacyInformation: "Information sur la protection des renseignements personnels",
+  linkPrivacyInformation:
+    "Information sur la protection des renseignements personnels",
   linkPrivacyPolicy: "Politique de confidentialité",
   allRightsReserved: "All rights reserved",
 
@@ -84,7 +85,8 @@ export const fr = {
   privacyPolicyH2_2: "2. Devoir de prudence et de discrétion",
   privacyPolicyH2_3: "3. Obligation de protection",
   privacyPolicyH2_4: "4. Gestion des données clients et employés",
-  privacyPolicyH2_5: "5. Conservation et communication des renseignements personnels",
+  privacyPolicyH2_5:
+    "5. Conservation et communication des renseignements personnels",
   privacyPolicyH2_6: "6. Consultation et modification",
   privacyPolicyH2_7: "7. Plaintes et questions",
   privacyPolicyH2_8: "8. Modifications de la politique",
@@ -106,5 +108,129 @@ export const fr = {
   privacyPolicyP2_8:
     "1-855-Maîtres se réserve le droit de modifier cette politique à tout moment. Notez que la dernière version de notre politique est affichée sur cette page.",
 
-  privacyOfficerText: "Responsable de la protection de la vie privée"
+  privacyOfficerText: "Responsable de la protection de la vie privée",
+
+  //contact
+  contactText:
+    "Si vous avez des questions ou si vous souhaitez qu’un de nos avocats vous aide à faire valoir vos droits, veuillez nous envoyer un message. Nous vous répondrons sous peu. Bien que l’information contenue dans le message de réponse qui vous sera acheminé soit de nature juridique, ceci ne constitue pas un avis juridique.",
+  inputName: "Nom complet",
+  inputMail: "Courriel",
+  inputTel: "Téléphone",
+  inputCom: "Commentaire",
+  titleSelect: "Veillez sélectionner une option",
+  nameSelect: "Сhoisir un sujet",
+  label1: "PARLEZ À UN AVOCAT POUR 50$",
+  label2: "DROIT CIVIL",
+  label3: "DROIT DES ASSURANCES",
+  label4: "DROIT CRIMINEL ET PÉNAL",
+  label5: "DROIT DU TRAVAIL ET DROIT SOCIAL",
+  label6: "DROIT DE L'IMMIGRATION",
+  label7: "AUTRE TYPE DE DROIT",
+  contactBtn1: "Envoyer",
+  contactBtn2: "Obtenir des directions",
+  contactAdress: "4350 Rue Beaubien E, Montréal, QC",
+
+  //thanck you
+  thankYouTitle: "Candidature envoyée avec succès",
+  thankYouText:
+    "Votre candidature a été envoyée avec succès. Elle sera traitée prochainement et nous vous contacterons sous peu.",
+  thankYouBtn1: "Lire le blog",
+  thankYouBtn2: "Aller à la page d'accueil",
+  thankYouBtn3: "Appelez-nous",
+
+  //blog
+  blogBtn: "Lire la suite",
+  cardTitle1: "La Bonne Foi dans le Cadre du Code Civil du Québec",
+  descriptionCard1:
+    "La bonne foi occupe une place centrale dans le droit civil québécois, constituant un principe fondamental qui influence et régit l’interprétation et l’application de nombreuses dispositions légales. Concrètement, elle se manifeste à travers deux dimensions principales : en tant que règle de conduite et comme critère d’interprétation.",
+  fullDescription_1_Title1: "La bonne foi comme règle de conduite",
+  fullDescription_1_Text1:
+    "Dans les relations contractuelles, la bonne foi agit à la fois comme une exigence comportementale à l’égard des parties durant la formation, l’exécution, et la résolution du contrat. Elle impose aux parties d’agir avec honnêteté, loyauté et de manière à ne pas nuire indûment aux intérêts de l’autre partie. Cette exigence de bonne foi se reflète dans divers aspects du droit des obligations, tels que la négociation contractuelle, l’exercice des droits contractuels et la manière de remplir les obligations.",
+  fullDescription_1_Title2: "La bonne foi comme critère d’interprétation",
+  fullDescription_1_Text2:
+    "Au-delà de son rôle dans la conduite des parties, la bonne foi sert également de principe directeur pour l’interprétation des contrats et des obligations légales. Elle guide les tribunaux dans la recherche de l’intention des parties et dans l’application équitable des dispositions contractuelles, en veillant à ce que les droits et obligations soient exercés de manière à respecter les attentes légitimes des parties.",
+  fullDescription_1_Title3:
+    "L’application de la bonne foi dans des situations spécifiques",
+  fullDescription_1_Text3:
+    "Dans les contrats de consommation : La bonne foi revêt une importance particulière, le législateur et les tribunaux cherchant à protéger les consommateurs contre les pratiques commerciales déloyales et à assurer l’équité dans les transactions. En matière de responsabilité civile : La bonne foi influence l’appréciation de la faute et peut atténuer ou aggraver la responsabilité des parties en fonction de leur comportement avant, pendant et après la survenance du dommage. Dans l’exercice des droits réels : La bonne foi joue un rôle dans la possession et l’acquisition de droits sur les biens, où elle peut conditionner l’acquisition de la propriété ou d’autres droits réels.",
+  fullDescription_1_Title4:
+    "La jurisprudence comme vecteur d’évolution de la notion de bonne foi",
+  fullDescription_1_Text4:
+    "La jurisprudence québécoise a contribué à l’évolution et à la précision de la notion de bonne foi, en l’adaptant aux circonstances changeantes de la société et aux besoins de justice entre les parties. Les décisions des tribunaux illustrent la flexibilité de la bonne foi et sa capacité à s’adapter à une variété de situations juridiques, renforçant ainsi son statut de principe sous-jacent au droit civil québécois. En conclusion, la bonne foi constitue un pilier du droit civil québécois, influençant à la fois la conduite des parties et l’interprétation des normes juridiques. Sa portée et son application sont vastes, reflétant l’importance de l’équité, de la loyauté et de la confiance dans les relations juridiques.",
+
+  //card2
+  cardTitle2:
+    "La Responsabilité Civile : L’Essence de l’Article 1457 du Code Civil du Québec",
+  descriptionCard2:
+    "Dans le tissu complexe de nos interactions quotidiennes, où chaque action peut avoir un impact sur autrui, l’article 1457 du Code civil du Québec se présente comme un phare de responsabilité, illuminant le chemin vers la justice et l’équité. Cet article, fondamental dans le paysage juridique québécois, établit un principe simple mais profond : si nos actions causent du tort à quelqu’un, nous avons l’obligation de réparer les dommages résultant de nos fautes. C’est un rappel constant de l’importance de nos actions et de leurs conséquences dans la société.",
+  fullDescription_2_Title1:
+    "La Faute : Premier Pilier de la Responsabilité Civile",
+  fullDescription_2_Text1:
+    "La notion de faute est centrale dans l’application de l’article 1457. Elle englobe non seulement les actions intentionnelles malveillantes mais aussi les négligences, les imprudences, et les manquements à nos devoirs. Chaque fois que nous dévions de la conduite attendue d’une personne raisonnable dans des circonstances similaires, nous franchissons le seuil de la faute. Cette flexibilité conceptuelle permet d’adapter la loi aux infinies nuances de la vie réelle, offrant une protection à ceux affectés par les actes d’autrui.",
+  fullDescription_2_Title2: "Le Préjudice : Seconde Clef de Voûte",
+  fullDescription_2_Text2:
+    "Pour qu’il y ait responsabilité, il doit y avoir préjudice. Ce préjudice peut être physique, moral, ou matériel. Il doit être réel, direct, et certain. L’article 1457 ne se contente pas de sanctionner la faute en soi ; il cherche à remédier aux conséquences tangibles de cette faute sur la vie d’autrui. C’est la reconnaissance que derrière chaque litige, il y a des vies impactées, des rêves peut-être brisés, et une quête de réparation.",
+  fullDescription_2_Title3:
+    "La Réparation : Conclusion Naturelle de la Responsabilité",
+  fullDescription_2_Text3:
+    "L’obligation de réparer est la conséquence logique de la faute et du préjudice. Elle peut prendre diverses formes, allant du dédommagement financier à la restitution, voire à la réparation en nature. Cette flexibilité permet de mieux adapter la solution au problème spécifique, cherchant non seulement à indemniser mais aussi, dans la mesure du possible, à restaurer l’état antérieur.",
+  fullDescription_2_Title4: "Vers un Avenir Responsable",
+  fullDescription_2_Text4:
+    "L’article 1457, dans sa sagesse et sa simplicité, nous rappelle l’importance de la vigilance et de la prudence dans nos actions. Il incarne l’idée que la liberté individuelle trouve sa limite dans le respect des droits d’autrui. En tant que société, il nous invite à poursuivre un idéal de coexistence respectueuse et responsable. Chaque jour, en tant qu’avocat, je vois l’impact de cet article sur la vie des gens. Il ne s’agit pas seulement d’une règle juridique mais d’un principe de vie, un guide vers un monde plus juste. Que vous soyez victime d’un préjudice ou que vous cherchiez à comprendre vos obligations, rappelez-vous que derrière les termes juridiques, il y a une quête fondamentale de justice et d’harmonie sociale. L’article 1457 du Code civil du Québec est plus qu’une disposition légale ; c’est un pilier sur lequel repose l’équilibre de notre société. En le comprenant et en l’appliquant, nous avançons tous ensemble vers un avenir où la responsabilité et le respect mutuel sont les pierres angulaires de notre coexistence.",
+
+  //card3
+  cardTitle3: "LA PRESCRIPTION",
+  descriptionCard3:
+    "La prescription d’une action en droit personnel est un sujet complexe et essentiel dans le domaine juridique, touchant à la capacité des individus à intenter une action en justice pour faire valoir leurs droits. Cet article explore les principes fondamentaux de la prescription en droit personnel, ses implications pratiques, ainsi que ses exceptions et particularités selon le droit québécois.",
+  fullDescription_3_Title1: "Qu’est-ce que la Prescription en Droit Personnel?",
+  fullDescription_3_Text1:
+    "La prescription en droit personnel réfère à un mécanisme légal qui limite le temps disponible pour intenter une action en justice afin de réclamer l’exécution d’une obligation ou la réparation d’un préjudice. L’objectif principal de la prescription est de garantir la sécurité juridique et la stabilité des relations sociales en évitant que des litiges ne soient indéfiniment réactivés.",
+  fullDescription_3_Title2: "Les Délais de Prescription",
+  fullDescription_3_Text2:
+    "Au Québec, le Code civil du Québec (CCQ) établit les règles générales de prescription. En principe, l’article 2925 du CCQ prévoit qu’une action en droit personnel est prescrite par trois ans. Ce délai signifie que, dans la majorité des cas, un créancier dispose de trois ans à compter de la connaissance du droit d’action pour intenter une procédure judiciaire contre un débiteur. Il est important de noter que la « connaissance du droit d’action » ne se limite pas à la connaissance du dommage ou de l’obligation, mais inclut également la connaissance de la personne du débiteur. Cette précision a pour but d’éviter les situations où un créancier, ignorant l’identité du débiteur, serait injustement privé de son droit d’action.",
+  fullDescription_3_Title3: "Exceptions et Particularités",
+  fullDescription_3_Text3:
+    "Le CCQ prévoit plusieurs exceptions au délai général de trois ans. Par exemple, certaines obligations issues de l’exploitation d’une entreprise, les actions en réparation pour dommages corporels causés par une infraction criminelle, ou encore certaines réclamations fondées sur des documents sous seing privé, peuvent être soumises à des délais de prescription spécifiques. De plus, la loi prévoit des mécanismes qui permettent de suspendre ou d’interrompre la prescription. La suspension de la prescription met temporairement en pause le décompte du délai, sans effacer le temps déjà écoulé, tandis que l’interruption de la prescription réinitialise entièrement le décompte du délai de prescription.",
+  fullDescription_3_Title4: "Conclusion",
+  fullDescription_3_Text4:
+    "La prescription d’une action en droit personnel est une notion clé en droit civil, qui équilibre le droit de poursuite avec la nécessité d’assurer une certaine paix sociale. Les règles de prescription encouragent les parties à agir de manière diligente et à régler leurs différends dans des délais raisonnables, tout en offrant une certaine flexibilité à travers les exceptions et les mécanismes de suspension ou d’interruption. Comprendre ces règles est essentiel pour toute personne souhaitant faire valoir ses droits en justice.",
+
+  //card4
+  cardTitle4: "1855 MAÎTRES: Défendant Vos Intérêts d’une Main de Maître",
+  descriptionCard4:
+    "Protéger vos droits, adapter des solutions juridiques avec expertise et soin. Besoin d’un avocat? Le monde juridique peut souvent sembler complexe et intimidant, mais avec 1-855-MAÎTRES à vos côtés, vous pouvez être assuré que vos intérêts seront défendus d’une main de maître. Fondé en 2021 par Maître Sophie Mongeon, 1-855-MAÎTRES est bien plus qu’un simple service juridique – c’est un partenaire dans la défense de vos droits et la résolution de vos problèmes juridiques.",
+  fullDescription_4_Title1: "Des Solutions Juridiques Sur Mesure",
+  fullDescription_4_Text1:
+    "Notre équipe d’avocats hautement qualifiés offre des solutions juridiques sur mesure dans divers domaines pour répondre à vos besoins spécifiques. Que vous soyez confronté à des questions de droit civil, de droit des assurances, de droit criminel et pénal, ou de droit du travail et social, nous avons l’expertise nécessaire pour vous guider à travers chaque étape du processus.                           1.Droit Civil: Nos avocats spécialisés en droit civil sont prêts à élaborer des solutions juridiques adaptées à vos besoins, vous offrant une représentation efficace et éthique dans toutes les affaires civiles. 2.Droit des Assurances: Si vos assurances refusent de vous payer, nous sommes là pour faire valoir vos droits. Notre équipe vous aidera à obtenir la compensation à laquelle vous avez droit. 3.Droit Criminel et Pénal: Face à la justice, vous n’êtes pas seul. Bénéficiez de l’expertise reconnue de nos avocats en droit criminel et pénal pour assurer une défense solide. 4.Droit du Travail et Social: Quels que soient vos besoins dans le domaine du travail et du social, nos solutions juridiques sur mesure vous guideront et vous soutiendront.",
+  fullDescription_4_Title2: "La Démocratisation du Droit",
+  fullDescription_4_Text2:
+    "1-855-MAÎTRES représente la démocratisation du droit en garantissant un accès rapide et abordable à des experts compétents et bien informés. Nos avocats respectent des critères stricts d’efficacité, d’éthique, d’engagement, d’équité et de transparence, assurant ainsi une représentation légale de qualité.",
+  fullDescription_4_Title3: "Votre Partenaire Juridique au Québec",
+  fullDescription_4_Text3:
+    "1-855-MAÎTRES est le service juridique au Québec qui se consacre à offrir des services juridiques complets et accessibles. Peu importe la nature de votre situation juridique, nous travaillons sans relâche pour défendre vos droits et vos intérêts. Nos consultations sont abordables, car nous croyons en la fourniture de conseils juridiques accessibles à tous. Si vous cherchez une solution à vos problèmes légaux, contactez-nous sans tarder au 1-855-MAÎTRES. Notre bureau est situé au 4350 Rue Beaubien E, Montréal, QC H1T 1S9. Faites le premier pas vers la résolution de vos problèmes juridiques avec l’assistance experte de 1-855-MAÎTRES.",
+
+  //card5
+  cardTitle5:
+    "Droit Civil Démystifié avec 1-855 MAÎTRES: Votre Guide Juridique au Québec",
+  descriptionCard5:
+    "Le Droit Civil, un domaine juridique vaste et complexe, touche de près de nombreux aspects de notre vie quotidienne. Qu’il s’agisse de contrats, de responsabilités civiles, de litiges ou de successions, une compréhension approfondie du Droit Civil est cruciale pour naviguer avec succès dans ces situations. Chez 1-855 MAÎTRES, notre équipe d’avocats spécialisés est là pour simplifier le Droit Civil et vous offrir des solutions juridiques adaptées à vos besoins spécifiques.",
+  fullDescription_5_Title1: "Qu’est-ce que le Droit Civil?",
+  fullDescription_5_Text1:
+    "Le Droit Civil englobe un ensemble de règles et de principes qui régissent les relations entre les individus et assurent la justice et l’équité dans ces interactions. Il couvre une gamme étendue de domaines, y compris les contrats, la responsabilité civile, les litiges, et les successions.",
+  fullDescription_5_Title2:
+    "Services Juridiques en Droit Civil avec 1-855 MAÎTRES",
+  fullDescription_5_Text2:
+    "Notre équipe d’avocats chevronnés chez 1-855 MAÎTRES offre une gamme complète de services juridiques en Droit Civil pour vous accompagner dans divers aspects de votre vie juridique, notamment : 1 Contrats et Obligations : Rédaction, interprétation et litiges liés aux contrats. 2 Responsabilité Civile : Défense des droits en cas de préjudice subi. 3 Litiges Civils : Règlement des différends devant les tribunaux civils. 4 Successions : Conseils et assistance dans les questions successorales.",
+  fullDescription_5_Title3:
+    "Pourquoi Choisir 1-855 MAÎTRES pour Vos Affaires en Droit Civil?",
+  fullDescription_5_Text3:
+    "1 Expertise Spécialisée : Nos avocats spécialisés en Droit Civil possèdent une connaissance approfondie des lois et des règlements qui régissent ce domaine complexe. 2 Approche Personnalisée : Chaque cas est unique. Nous adoptons une approche personnalisée pour comprendre vos besoins spécifiques et élaborer des solutions sur mesure. 3 Transparence et Communication : Nous croyons en une communication transparente avec nos clients. Vous serez informé de chaque étape du processus juridique. 4 Accessibilité Financière : La justice doit être accessible à tous. Nous offrons des consultations abordables pour vous permettre d’obtenir l’assistance juridique dont vous avez besoin.",
+  fullDescription_5_Title4:
+    "Contactez 1-855 MAÎTRES pour Vos Besoins en Droit Civil",
+  fullDescription_5_Text4:
+    "Si vous êtes confronté à des questions juridiques en Droit Civil, ne cherchez pas plus loin. Contactez-nous au 1-855-MAÎTRES (1855-624-8737) ou par e-mail à Info@1855maitres-com. Chez 1-855 MAÎTRES, nous sommes là pour vous assister à chaque étape de votre parcours juridique en vous offrant des solutions adaptées à vos besoins spécifiques. Vos intérêts seront défendus d’une main de maître! Restez informé et protégé dans le monde complexe du Droit Civil avec 1-855 MAÎTRES!",
+
+  //blogDetail
+
+  cardDetailBtn: "Voir tout",
 };

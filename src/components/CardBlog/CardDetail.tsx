@@ -4,10 +4,12 @@ import { useNavigate, useParams } from "react-router-dom";
 import DefaultLayout from "@/layouts/default";
 import { CardDetailProps } from "@/types/CardDetailProps";
 import { dataBlog } from "@/data/dataBlog";
+import { useTranslation } from "react-i18next";
 
 const CardDetail: React.FC<CardDetailProps> = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleGoBack = () => {
     navigate(-1);
@@ -21,7 +23,7 @@ const CardDetail: React.FC<CardDetailProps> = () => {
 
   return (
     <DefaultLayout>
-      <div className="flex items-center justify-center flex-col">
+      <div className="flex items-center pt-5 justify-center flex-col">
         <Card className="p-6  ">
           <div className="flex justify-center items-center w-full h-full overflow-hidden place-content-center group">
             <Image
@@ -31,15 +33,17 @@ const CardDetail: React.FC<CardDetailProps> = () => {
             />
           </div>
 
-          <h3 className="font-bold text-3xl mb-8 text-center ">{blogItem.title}</h3>
+          <h3 className="font-bold text-3xl mb-8 text-center ">
+            {t(`${blogItem.title}`)}
+          </h3>
 
           <p className="text-left text-xl overflow-hidden text-ellipsis mb-6">
-            {blogItem.description}
+            {t(`${blogItem.description}`)}
           </p>
           {blogItem.fullDescription.map(({ title, text }) => (
             <div key={title}>
-              <h3 className="mb-6 text-2xl font-medium ">{title}</h3>
-              <p className="mb-6 text-xl font-normal">{text}</p>
+              <h3 className="mb-6 text-2xl font-medium ">{t(`${title}`)}</h3>
+              <p className="mb-6 text-xl font-normal">{t(`${text}`)}</p>
             </div>
           ))}
         </Card>
@@ -50,7 +54,7 @@ const CardDetail: React.FC<CardDetailProps> = () => {
           size="sm"
           variant="light"
         >
-          See all
+          {t("cardDetailBtn")}
         </Button>
       </div>
     </DefaultLayout>

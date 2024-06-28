@@ -3,38 +3,45 @@ import { Link } from "@nextui-org/react";
 
 import styles from "./Footer.module.scss";
 
+const dataLink = [
+  { href: "/privacy-information", text: "linkPrivacyInformation" },
+  { href: "/privacy-policy", text: "linkPrivacyPolicy" }
+];
+
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
     <footer className={styles.footerSection}>
-      <p className={styles.footerText}>{t("footerText")}</p>
+      <p className={`dark:text-zinc-400 ${styles.footerText}`}>{t("footerText")}</p>
       <Link
         href="mailto:info@1855maitres.com"
         underline="always"
-        style={{ color: "#a1a1aa", display: "flex" }}
+        color="foreground"
+        className="flex text-center dark:text-zinc-400"
       >
         Info@1855maitres.com
       </Link>
-      <Link
-        href="/privacy-information"
-        underline="always"
-        className="uppercase text-center"
-        style={{ color: "#a1a1aa", display: "flex" }}
-      >
-        {t("linkPrivacyInformation")}
-      </Link>
-      <Link
-        href="/privacy-policy"
-        underline="always"
-        className="uppercase"
-        style={{ color: "#a1a1aa", display: "flex" }}
-      >
-        {t("linkPrivacyPolicy")}
-      </Link>
-      <p className="capitalize">
+      {dataLink.map(({ href, text }) => (
+        <Link
+          key={text}
+          href={href}
+          underline="always"
+          color="foreground"
+          className="uppercase text-center dark:text-zinc-400"
+        >
+          {t(text)}
+        </Link>
+      ))}
+
+      <p className={`capitalize dark:text-zinc-400`}>
         ©{" "}
-        <Link href="#" underline="always" style={{ color: "#a1a1aa", display: "inline-block" }}>
+        <Link
+          href="#"
+          underline="always"
+          color="foreground"
+          className="inline-block uppercase text-center dark:text-zinc-400"
+        >
           1-855-MAÎTRES
         </Link>{" "}
         | {t("allRightsReserved")}.

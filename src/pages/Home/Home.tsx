@@ -2,7 +2,8 @@ import DefaultLayout from "@/layouts/default";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import DomaineDroitSection from "@/components/DomaineDroit/DomaineDroitSection";
 import LawsSection from "@/components/LawsSection/LawsSection";
-const Accueil = () => {
+
+const Home = () => {
   return (
     <DefaultLayout>
       <HeroSection />
@@ -12,4 +13,4 @@ const Accueil = () => {
   );
 };
 
-export default Accueil;
+export default Home;

@@ -53,7 +53,9 @@ const DomaineDroitSection = () => {
                   </div>
                   <h3 className="uppercase font-bold">{t(`${title}`)}</h3>
                 </div>
-                <p className={styles.descriptionCard}>{t(`${description}`)}</p>
+                <p className={`${styles.descriptionCard} dark:text-zinc-400`}>
+                  {t(`${description}`)}
+                </p>
 
                 <div className={styles.linkBtnWrapper}>
                   <Button

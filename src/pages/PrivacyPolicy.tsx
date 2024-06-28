@@ -11,21 +11,21 @@ const PrivacyPolicy = () => {
     <DefaultLayout>
       <section className="flex flex-col gap-4 py-8 md:py-10">
         <div className="block">
-          <h1 className="text-3xl mb-16 text-zinc-400">{t("privacyPolicyH1")}</h1>
+          <h1 className="text-3xl mb-16 dark:text-zinc-400">{t("privacyPolicyH1")}</h1>
           <ol className="flex flex-col gap-16">
             {privacyPolicyData.map(({ title, description }) => (
               <li key={title}>
-                <h2 className="text-3xl mb-4 text-zinc-400">{t(`${title}`)}</h2>
-                <p className="text-2xl text-zinc-400">{t(`${description}`)}</p>
+                <h2 className="text-3xl mb-4 dark:text-zinc-400">{t(`${title}`)}</h2>
+                <p className="text-2xl dark:text-zinc-400">{t(`${description}`)}</p>
               </li>
             ))}
           </ol>
 
-          <p className="text-2xl text-zinc-400 mt-16 mb-4">{t("privacyOfficerText")}</p>
-          <p className="text-2xl text-zinc-400 font-semibold mb-4">
+          <p className="text-2xl dark:text-zinc-400 mt-16 mb-4">{t("privacyOfficerText")}</p>
+          <p className="text-2xl dark:text-zinc-400 font-semibold mb-4">
             Patrick René, Directeur des Opérations
           </p>
-          <p className="text-2xl text-zinc-400 mb-4">
+          <p className="text-2xl dark:text-zinc-400 mb-4">
             4350 Beaubien Est, Montréal (Québec) H1T 1S9
           </p>
           <Link

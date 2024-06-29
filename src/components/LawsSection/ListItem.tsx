@@ -19,15 +19,15 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
 
       <div className={styles.lawTexttWrapper}>
         <h3 className={styles.titleLawBlock}>{t(`${title}`)}</h3>
-        <p className={styles.descriptionLawBlock}>{t(`${description}`)}</p>
+        <p className={`${styles.descriptionLawBlock} dark:text-zinc-400s`}>{t(`${description}`)}</p>
 
         <div className={styles.btnsWrapper}>
           <Button
             href="#"
             as={Link}
             variant="solid"
-            className="uppercase underline"
-            style={{ backgroundColor: buttonColor, color: "#FFFFFF" }}
+            className="uppercase underline text-white"
+            style={{ backgroundColor: buttonColor }}
           >
             By telephone
           </Button>

@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import Accueil from "@/pages/Accueil/Accueil";
-import APropos from "@/pages/APropos/APropos";
+import Home from "@/pages/Home/Home";
+import About from "@/pages/About/About";
 import Blogue from "@/pages/Blogue/Blogue";
 import Contact from "@/pages/Contact";
 import CardDetail from "@/components/CardBlog/CardDetail";
@@ -11,8 +11,8 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 function App() {
   return (
     <Routes>
-      <Route element={<Accueil />} path="/" />
-      <Route element={<APropos />} path="/a-propos" />
+      <Route element={<Home />} path="/" />
+      <Route element={<About />} path="/about" />
       <Route element={<PrivacyInformation />} path="/privacy-information" />
       <Route element={<PrivacyPolicy />} path="/privacy-policy" />
       <Route element={<Blogue />} path="/blogue" />

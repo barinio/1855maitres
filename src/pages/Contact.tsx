@@ -143,14 +143,14 @@ const Contact = () => {
                 </div>
 
                 <div className="md:flex justify-between md:mb-6 lg:flex-col lg:justify-start gap-[73px] ">
-                  <div className="m-auto w-64 h-52 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[570px] lg:h-[506px]">
+                  <div className="m-auto w-80 h-72 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[600px] lg:h-[506px]">
                     <GoogleMaps />
                   </div>
 
                   <div className="md:flex flex-col justify-between">
                     <div className="lg:absolute top-[-95px] left-0">
                       <p className="text-center ml-auto mr-auto mb-4 max-w-52 md:text-start md:ml-0 ">
-                        {t("contactAdress")}
+                        {t("contactAdress")}{" "}
                         <span className="hidden md:inline">
                           <br />
                         </span>

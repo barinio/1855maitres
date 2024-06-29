@@ -30,7 +30,7 @@ const ThankYou = () => {
         <div className="flex flex-col gap-5 items-center ">
           <Button
             onClick={handleClickBlog}
-            className="w-32"
+            className="min-w-40"
             type="button"
             size="md"
             color="default"
@@ -39,7 +39,7 @@ const ThankYou = () => {
           </Button>
           <Button
             onClick={handleClickHome}
-            className="w-32"
+            className="min-w-40"
             type="button"
             size="md"
             color="default"
@@ -48,7 +48,7 @@ const ThankYou = () => {
           </Button>
           <Button
             onClick={handleClickCallUs}
-            className="w-32"
+            className="min-w-40"
             type="button"
             size="md"
             color="default"

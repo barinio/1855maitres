@@ -128,14 +128,14 @@ export const fr = {
   label7: "AUTRE TYPE DE DROIT",
   contactBtn1: "Envoyer",
   contactBtn2: "Obtenir des directions",
-  contactAdress: "4350 Rue Beaubien E, Montréal, QC",
+  contactAdress: "4350 Rue Beaubien Est, Montréal, QC",
 
   //thanck you
   thankYouTitle: "Candidature envoyée avec succès",
   thankYouText:
     "Votre candidature a été envoyée avec succès. Elle sera traitée prochainement et nous vous contacterons sous peu.",
   thankYouBtn1: "Lire le blog",
-  thankYouBtn2: "Aller à la page d'accueil",
+  thankYouBtn2: "Aller à la d'accueil",
   thankYouBtn3: "Appelez-nous",
 
   //blog

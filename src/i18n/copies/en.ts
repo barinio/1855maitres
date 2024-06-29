@@ -128,7 +128,7 @@ export const en = {
   label7: "OTHER TYPE OF LAW",
   contactBtn1: "Send",
   contactBtn2: "Get directions",
-  contactAdress: "4350 Rue Beaubien E, Montreal, QC",
+  contactAdress: "4350 Rue Beaubien East, Montreal, QC",
 
   //thanck you
   thankYouTitle: "Application sent successfully",

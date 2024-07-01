@@ -35,7 +35,6 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    console.log(formData);
     setFormData({
       username: "",
       email: "",
@@ -49,7 +48,6 @@ const Contact = () => {
     <DefaultLayout>
       <section className="items-center pt-5 justify-center md:px-10 lg:w-full lg:px-0">
         <div className="max-w-sm  ml-auto mr-auto  md:max-w-2xl lg:max-w-full">
-          {/* <h1 className={title()}>Contact</h1> */}
           {showThankPage ? (
             <ThankYou />
           ) : (

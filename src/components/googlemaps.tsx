@@ -1,5 +1,5 @@
-import { GoogleMap, MarkerF } from "@react-google-maps/api";
-import { useCallback, useRef } from "react";
+import { GoogleMap } from "@react-google-maps/api";
+import { useCallback, useEffect, useRef } from "react";
 import { useJsApiLoader } from "@react-google-maps/api";
 
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
@@ -34,6 +34,24 @@ function GoogleMaps() {
     mapRef.current = map;
   }, []);
 
+  useEffect(() => {
+    if (isLoaded && mapRef.current) {
+      const map = mapRef.current;
+
+      const advancedMarker = new (
+        window as any
+      ).google.maps.marker.AdvancedMarkerElement({
+        map,
+        position: center,
+        title: "Advanced Marker",
+      });
+
+      return () => {
+        advancedMarker.setMap(null);
+      };
+    }
+  }, [isLoaded]);
+
   return (
     <>
       {isLoaded ? (
@@ -44,12 +62,10 @@ function GoogleMaps() {
           onLoad={onLoad}
           options={defaultOption}
         >
-          <MarkerF position={center} />
-
           <div className="absolute top-0 left-0  ">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d89324.4674163899!2d-73.5863944!3d45.602814!3m2!1i1024!2i768!4f14.1!3m3!1m2!1s0x4cc91eaf5df68673%3A0xcc4805264f6599b7!2s1-855-MAITRES!5e0!3m2!1sen!2sch!4v1719701490468!5m2!1sen!2sch"
-              className="w-[320px] h-[288px] md:w-[386px] md:h-[330px] lg:w-[600px] lg:h-[506px]"
+              className="w-[320px] h-[288px] md:w-[390px] md:h-[330px] lg:w-[600px] lg:h-[506px]"
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"

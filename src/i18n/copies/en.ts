@@ -6,7 +6,7 @@ export const en = {
   contact: "Contact",
 
   // hero
-  homeHeroH1: "Des solutions juridiques adaptees a vos besoins",
+  homeHeroH1: "Legal solutions adapted to your needs",
   homeHeroBtn: "Make an appointment",
   homeHeroDescription:
     "Our goal is to make legal services accessible to citizens throughout Quebec. If you are looking to assert your rights in one of the many areas of law, you can easily contact us by dialing our unique number, ",
@@ -46,8 +46,7 @@ export const en = {
   // Footer
   footerText:
     "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-  linkPrivacyInformation:
-    "Information on the protection of personal information",
+  linkPrivacyInformation: "Information on the protection of personal information",
   linkPrivacyPolicy: "Privacy policy",
   allRightsReserved: "All rights reserved",
 
@@ -66,8 +65,7 @@ export const en = {
     "If you are looking for a solution to your legal problems, contact us without delay. With us, your interests will be defended with a Master Hand!",
 
   // PrivacyInformation
-  privacyInformationH1:
-    "Responsible for access to documents or protection of personal information",
+  privacyInformationH1: "Responsible for access to documents or protection of personal information",
   //
 
   privacyInformationP1:
@@ -149,8 +147,7 @@ export const en = {
   fullDescription_1_Title2: "Good faith as a criterion of interpretation",
   fullDescription_1_Text2:
     "Beyond its role in the conduct of the parties, good faith also serves as a guiding principle for the interpretation of contracts and legal obligations.It guides courts in investigating the intention of the parties and in the fair application of contractual provisions, ensuring that rights and obligations are exercised in a manner that respects the legitimate expectations of the parties.",
-  fullDescription_1_Title3:
-    "The application of good faith in specific situations",
+  fullDescription_1_Title3: "The application of good faith in specific situations",
   fullDescription_1_Text3:
     "In consumer contracts: Good faith is of particular importance, with legislators and courts seeking to protect consumers against unfair commercial practices and to ensure fairness in transactions.In matters of civil liability: Good faith influences the assessment of fault and can mitigate or aggravate the liability of the parties depending on their behavior before, during and after the occurrence of the damage.In the exercise of real rights: Good faith plays a role in the possession and acquisition of rights over property, where it can condition the acquisition of ownership or other real rights.",
   fullDescription_1_Title4:
@@ -159,8 +156,7 @@ export const en = {
     "Quebec jurisprudence has contributed to the evolution and precision of the notion of good faith, adapting it to the changing circumstances of society and the needs for justice between the parties.Court decisions illustrate the flexibility of good faith and its ability to adapt to a variety of legal situations, thereby reinforcing its status as an underlying principle in Quebec civil law.In conclusion, good faith constitutes a pillar of Quebec civil law, influencing both the conduct of the parties and the interpretation of legal norms.Its scope and application are broad, reflecting the importance of fairness, loyalty and trust in legal relationships.",
 
   //card2
-  cardTitle2:
-    "Civil Liability: The Essence of Article 1457 of the Civil Code of Quebec",
+  cardTitle2: "Civil Liability: The Essence of Article 1457 of the Civil Code of Quebec",
   descriptionCard2:
     "In the complex fabric of our daily interactions, where every action can have an impact on others, article 1457 of the Civil Code of Quebec presents itself as a beacon of responsibility, illuminating the path towards justice and equity. This article, fundamental in the Quebec legal landscape, establishes a simple but profound principle: if our actions cause harm to someone, we have the obligation to repair the damage resulting from our faults. It is a constant reminder of the importance of our actions and their consequences in society",
   fullDescription_2_Title1: "Fault: First Pillar of Civil Liability",
@@ -208,8 +204,7 @@ export const en = {
     "1-855-MAÎTRES is the legal service in Quebec dedicated to providing comprehensive and accessible legal services. Regardless of the nature of your legal situation, we work tirelessly to defend your rights and interests. Our consultations are affordable because we believe in providing legal advice that is accessible to everyone. If you are looking for a solution to your legal problems, contact us without delay at 1-855-MAÎTRES . Our office is located at 4350 Rue Beaubien E, Montreal, QC H1T 1S9 . Take the first step toward resolving your legal issues with the expert assistance of 1-855-MAÎTRES.",
 
   //card3
-  cardTitle5:
-    "Civil Law Demystified with 1-855 MAÎTRES: Your Legal Guide in Quebec",
+  cardTitle5: "Civil Law Demystified with 1-855 MAÎTRES: Your Legal Guide in Quebec",
   descriptionCard5:
     "Civil Law, a vast and complex legal field, closely affects many aspects of our daily lives. Whether it involves contracts, civil liability, litigation or inheritance, a thorough understanding of Civil Law is crucial to successfully navigating these situations. At 1-855 MAÎTRES, our team of specialized lawyers is here to simplify Civil Law and offer you legal solutions adapted to your specific needs.",
   fullDescription_5_Title1: "What is Civil Law?",
@@ -218,8 +213,7 @@ export const en = {
   fullDescription_5_Title2: "Legal Services in Civil Law with 1-855 MASTERS",
   fullDescription_5_Text2:
     "Our team of experienced lawyers at 1-855 MAÎTRES offers a full range of legal services in Civil Law to support you in various aspects of your legal life, including: 1 Contracts and Obligations: Drafting, interpretation and disputes related to contracts. 2 Civil Liability: Defense of rights in the event of damage suffered. 3 Civil Disputes: Resolution of disputes before civil courts. 4 Inheritance: Advice and assistance in inheritance matters.",
-  fullDescription_5_Title3:
-    "Why Choose 1-855 MAÎTRES for Your Civil Law Matters?",
+  fullDescription_5_Title3: "Why Choose 1-855 MAÎTRES for Your Civil Law Matters?",
   fullDescription_5_Text3:
     "Specialized Expertise: Our lawyers specializing in Civil Law have in-depth knowledge of the laws and regulations that govern this complex area. 2 Personalized Approach: Each case is unique. We take a personalized approach to understand your specific needs and develop tailor-made solutions. 3 Transparency and Communication: We believe in transparent communication with our customers. You will be informed of every step of the legal process. 4Financial Accessibility: Justice must be accessible to all. We offer affordable consultations to help you get the legal assistance you need.",
   fullDescription_5_Title4: "Contact 1-855 MAÎTRES for Your Civil Law Needs",
@@ -228,5 +222,5 @@ export const en = {
 
   //blogDetail
 
-  cardDetailBtn: "See all",
+  cardDetailBtn: "See all"
 };

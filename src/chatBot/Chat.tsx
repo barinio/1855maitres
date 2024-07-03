@@ -57,7 +57,7 @@ function Chat({ closeChat }: ChatProps) {
         chatRef.current.scrollTop = chatRef.current.scrollHeight;
       }
     };
-    scrollToBottom(); // Вызываем функцию прокрутки после каждого обновления сообщений
+    scrollToBottom(); 
   }, [messages]);
 
   const sendMessage = (message: string) => {

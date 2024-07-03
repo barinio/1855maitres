@@ -21,13 +21,9 @@ const Blogue: React.FC = () => {
       <div>
         <section className="pt-5">
           <div className="">
-            {/* <h1 className={title()}> blogggggg</h1> */}
-            {/* {showDetailCard ? (
-            <CardDetail cardItem={selectedCard} />
-          ) : ( */}
             <ul className="flex flex-col items-center gap-7 md:flex-row md:flex-wrap md:justify-center ">
               {dataBlog.map((blogItem) => (
-                <Link to={`/blogue/${blogItem.id}`}>
+                <Link to={`/blogue/${blogItem.id}`} key={blogItem.id}>
                   <CardBlog
                     key={blogItem.id}
                     data={blogItem}
@@ -36,7 +32,6 @@ const Blogue: React.FC = () => {
                 </Link>
               ))}
             </ul>
-            {/* )} */}
           </div>
         </section>
       </div>

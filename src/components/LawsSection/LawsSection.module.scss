@@ -1,69 +1,69 @@
 .lawsSection {
-	margin-top: 264px;
+  margin-top: 264px;
 
-	@media (max-width: 730px) {
-		& {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			margin: -1px;
-			border: 0;
-			padding: 0;
-			white-space: nowrap;
-			clip-path: inset(100%);
-			clip: rect(0 0 0 0);
-			overflow: hidden;
-		}
-	}
+  @media (max-width: 730px) {
+    & {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
 }
 .lawsItemsList {
-	display: flex;
-	flex-direction: column;
-	gap: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
 }
 
 .lawContentWrapper {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	gap: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .lawTexttWrapper {
-	.titleLawBlock {
-		font-weight: bold;
-		font-size: 60px;
-		letter-spacing: -1.5px;
-	}
-	&:nth-child(odd) {
-		.titleLawBlock {
-			color: #c20e4d;
-		}
-	}
-	&:nth-child(even) {
-		.titleLawBlock {
-			color: #f96501;
-		}
-	}
+  .titleLawBlock {
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: -1.5px;
+  }
+  &:nth-child(odd) {
+    .titleLawBlock {
+      color: #c20e4d;
+    }
+  }
+  &:nth-child(even) {
+    .titleLawBlock {
+      color: #f96501;
+    }
+  }
 }
 .descriptionLawBlock {
-	width: 403px;
+  width: 403px;
 }
 
 .lawTexttWrapper {
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-around;
 }
 
 .btnsWrapper {
-	display: flex;
-	gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 .isEvenImg {
-	@media (width < 1040px) {
-		object-fit: cover;
-		width: 40%;
-	}
+  @media (width < 1040px) {
+    object-fit: cover;
+    width: 40%;
+  }
 }

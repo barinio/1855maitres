@@ -15,7 +15,7 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
 
   return (
     <li key={title} className={styles.lawContentWrapper}>
-      {!isEven && <img src={img} alt={title} className={styles.isEvenImg} />}
+      {!isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
 
       <div className={styles.lawTexttWrapper}>
         <h3 className={styles.titleLawBlock}>{t(`${title}`)}</h3>
@@ -44,7 +44,7 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
           </Button>
         </div>
       </div>
-      {isEven && <img src={img} alt={title} className={styles.isEvenImg} />}
+      {isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
     </li>
   );
 };

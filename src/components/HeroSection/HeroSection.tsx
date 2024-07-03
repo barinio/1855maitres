@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Link, Button } from "@nextui-org/react";
 
+import CalendlyButton from "../Calendly/CalendlyButton";
+
 import styles from "./HeroSection.module.scss";
 
 import heroImgDark from "@/images/hero-dark.png";
@@ -28,16 +30,7 @@ const HeroSection = () => {
           +1-855-624-8737
         </a>
 
-        <Button
-          style={{ display: "flex", fontSize: "16px" }}
-          href="#"
-          as={Link}
-          color="primary"
-          variant="solid"
-          className={styles.btnLink}
-        >
-          {t("homeHeroBtn")}
-        </Button>
+        <CalendlyButton buttonText="homeHeroBtn" />
 
         <div className={styles.wrapperHeroText}>
           <p style={{ fontSize: "16px", color: isDark ? "#a1a1aa" : "#000000" }}>

@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
-import './styles/KeywordForm.module.scss';
 import styles from './styles/KeywordForm.module.scss';
 
+interface FormData {
+  email: string;
+  name: string;
+  number: string;
+}
+
 function KeywordForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     email: '',
     name: '',
     number: '',
@@ -12,17 +17,17 @@ function KeywordForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submittingError, setSubmittingError] = useState('');
 
-  const handleChange = e => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     axios
-      .post('https://avocad-chat-back.onrender.com/add', formData)
+      .post('https://one855-product-code.onrender.com/add', formData)
       .then(response => {
         console.log(response.data);
         setFormData({ email: '', name: '', number: '' });
@@ -31,7 +36,7 @@ function KeywordForm() {
       .catch(error => {
         console.error('Error sending data:', error);
         setSubmittingError(
-          'An error occurred while sending data. Please reshape.'
+          'An error occurred while sending data. Please try again.'
         );
       });
   };

@@ -22,15 +22,15 @@ export const en = {
   domaineDroitDescription1:
     "Tailor-made legal solutions for all your civil law needs! Our expert team provides personalized advice and representation to ensure your rights are protected.",
   domaineDroitDescription2:
-    "Votre compagnie d'assurance refuse de vous payer ? Faites valoir vos droits avec notre soutien juridique expert. Nous vous aidons à obtenir la compensation que vous méritez.",
+    "Is your insurance company refusing to pay you? Assert your rights with our expert legal support. We help you get the compensation you deserve.",
   domaineDroitDescription3:
     "Facing criminal charges? You're not alone. Our recognized expertise in criminal and penal law ensures robust defense and support throughout the legal process.",
   domaineDroitDescription4:
-    "Quels que soient vos besoins, nos solutions juridiques sur mesure en droit du travail et social vous guideront. Faites confiance à nos experts pour un soutien efficace et personnalisé.",
+    "Whatever your needs, our tailor-made legal solutions in labor and social law will guide you. Trust our experts for effective and personalized support.",
   domaineDroitDescription5:
-    "Un soutien personnalisé et professionnel en droit de l'immigration. Nous vous accompagnons à chaque étape pour bâtir votre avenir au Canada.",
+    "Personalized and professional support in immigration law. We accompany you at every step to build your future in Canada.",
   domaineDroitDescription6:
-    "Explorez les possibilités juridiques de votre dossier. Contactez-nous pour découvrir comment nous pouvons élaborer ensemble une stratégie gagnante.",
+    "Explore the legal possibilities of your case. Contact us to discover how we can develop a winning strategy together.",
 
   // LawsData
   lawsTitle1: "Civil law",

@@ -12,19 +12,19 @@ export const fr = {
     "Notre objectif est de rendre les services juridiques accessibles aux citoyens partout au Québec. Si vous cherchez à faire valoir vos droits dans l’un des nombreux domaines du droit, vous pouvez nous contacter facilement en composant notre numéro unique, le ",
 
   // domaineDroitData
-  domaineDroitTitle1: "Civil law",
-  domaineDroitTitle2: "Insurance law",
-  domaineDroitTitle3: "Criminal and penal law",
-  domaineDroitTitle4: "Labor and social law",
-  domaineDroitTitle5: "Immigration law",
-  domaineDroitTitle6: "Other type of law",
+  domaineDroitTitle1: "Droit civil",
+  domaineDroitTitle2: "Droit des assurances",
+  domaineDroitTitle3: "Droit pénal",
+  domaineDroitTitle4: "Droit du travail et social",
+  domaineDroitTitle5: "Droit de l'immigration",
+  domaineDroitTitle6: "Autre type de droit",
 
   domaineDroitDescription1:
-    "Tailor-made legal solutions for all your civil law needs! Our expert team provides personalized advice and representation to ensure your rights are protected.",
+    "Des solutions juridiques sur mesure pour tous vos besoins en droit civil ! Notre équipe d'experts fournit des conseils et une représentation personnalisés pour garantir que vos droits soient protégés.",
   domaineDroitDescription2:
     "Votre compagnie d'assurance refuse de vous payer ? Faites valoir vos droits avec notre soutien juridique expert. Nous vous aidons à obtenir la compensation que vous méritez.",
   domaineDroitDescription3:
-    "Facing criminal charges? You're not alone. Our recognized expertise in criminal and penal law ensures robust defense and support throughout the legal process.",
+    "Vous faites face à des accusations criminelles ? Vous n'êtes pas seul. Notre expertise reconnue en droit pénal assure une défense solide et un soutien tout au long du processus judiciaire.",
   domaineDroitDescription4:
     "Quels que soient vos besoins, nos solutions juridiques sur mesure en droit du travail et social vous guideront. Faites confiance à nos experts pour un soutien efficace et personnalisé.",
   domaineDroitDescription5:

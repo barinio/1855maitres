@@ -111,7 +111,7 @@ function Chat({ closeChat }: ChatProps) {
           <Input sendMessage={sendMessage} />
         </div>
       </div>
-      <div className={styles.textItIsBotWrapper}>
+      <div>
         <p className={styles.textItIsBot}>
           Veuillez noter que les réponses fournies ne constituent pas
           des avis juridiques. Nous recommandons de consulter un

@@ -89,9 +89,7 @@ function KeywordForm() {
         </p>
       )}
 
-      {submittingError && (
-        <div className={styles.errorMessage}>{submittingError}</div>
-      )}
+      {submittingError && <div>{submittingError}</div>}
     </div>
   );
 }

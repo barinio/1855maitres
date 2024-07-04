@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './styles/Chat.module.scss';
 import Input from './Input';
 import KeywordForm from './KeywordForm';

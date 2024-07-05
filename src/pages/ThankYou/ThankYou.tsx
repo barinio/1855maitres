@@ -19,7 +19,7 @@ const ThankYou = () => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-24">
+    <div className="flex items-center justify-center min-h-screen">
       <Card className="ml-auto mr-auto max-w-80 p-8">
         <CardBody>
           <h2 className="mb-5 text-center text-emerald-500">

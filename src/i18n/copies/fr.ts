@@ -53,7 +53,8 @@ export const fr = {
   // Footer
   footerText:
     "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
-  linkPrivacyInformation: "Information sur la protection des renseignements personnels",
+  linkPrivacyInformation:
+    "Information sur la protection des renseignements personnels",
   linkPrivacyPolicy: "Politique de confidentialité",
   allRightsReserved: "All rights reserved",
 
@@ -91,7 +92,8 @@ export const fr = {
   privacyPolicyH2_2: "2. Devoir de prudence et de discrétion",
   privacyPolicyH2_3: "3. Obligation de protection",
   privacyPolicyH2_4: "4. Gestion des données clients et employés",
-  privacyPolicyH2_5: "5. Conservation et communication des renseignements personnels",
+  privacyPolicyH2_5:
+    "5. Conservation et communication des renseignements personnels",
   privacyPolicyH2_6: "6. Consultation et modification",
   privacyPolicyH2_7: "7. Plaintes et questions",
   privacyPolicyH2_8: "8. Modifications de la politique",
@@ -154,24 +156,29 @@ export const fr = {
   fullDescription_1_Title2: "La bonne foi comme critère d’interprétation",
   fullDescription_1_Text2:
     "Au-delà de son rôle dans la conduite des parties, la bonne foi sert également de principe directeur pour l’interprétation des contrats et des obligations légales. Elle guide les tribunaux dans la recherche de l’intention des parties et dans l’application équitable des dispositions contractuelles, en veillant à ce que les droits et obligations soient exercés de manière à respecter les attentes légitimes des parties.",
-  fullDescription_1_Title3: "L’application de la bonne foi dans des situations spécifiques",
+  fullDescription_1_Title3:
+    "L’application de la bonne foi dans des situations spécifiques",
   fullDescription_1_Text3:
     "Dans les contrats de consommation : La bonne foi revêt une importance particulière, le législateur et les tribunaux cherchant à protéger les consommateurs contre les pratiques commerciales déloyales et à assurer l’équité dans les transactions. En matière de responsabilité civile : La bonne foi influence l’appréciation de la faute et peut atténuer ou aggraver la responsabilité des parties en fonction de leur comportement avant, pendant et après la survenance du dommage. Dans l’exercice des droits réels : La bonne foi joue un rôle dans la possession et l’acquisition de droits sur les biens, où elle peut conditionner l’acquisition de la propriété ou d’autres droits réels.",
-  fullDescription_1_Title4: "La jurisprudence comme vecteur d’évolution de la notion de bonne foi",
+  fullDescription_1_Title4:
+    "La jurisprudence comme vecteur d’évolution de la notion de bonne foi",
   fullDescription_1_Text4:
     "La jurisprudence québécoise a contribué à l’évolution et à la précision de la notion de bonne foi, en l’adaptant aux circonstances changeantes de la société et aux besoins de justice entre les parties. Les décisions des tribunaux illustrent la flexibilité de la bonne foi et sa capacité à s’adapter à une variété de situations juridiques, renforçant ainsi son statut de principe sous-jacent au droit civil québécois. En conclusion, la bonne foi constitue un pilier du droit civil québécois, influençant à la fois la conduite des parties et l’interprétation des normes juridiques. Sa portée et son application sont vastes, reflétant l’importance de l’équité, de la loyauté et de la confiance dans les relations juridiques.",
 
   //card2
-  cardTitle2: "La Responsabilité Civile : L’Essence de l’Article 1457 du Code Civil du Québec",
+  cardTitle2:
+    "La Responsabilité Civile : L’Essence de l’Article 1457 du Code Civil du Québec",
   descriptionCard2:
     "Dans le tissu complexe de nos interactions quotidiennes, où chaque action peut avoir un impact sur autrui, l’article 1457 du Code civil du Québec se présente comme un phare de responsabilité, illuminant le chemin vers la justice et l’équité. Cet article, fondamental dans le paysage juridique québécois, établit un principe simple mais profond : si nos actions causent du tort à quelqu’un, nous avons l’obligation de réparer les dommages résultant de nos fautes. C’est un rappel constant de l’importance de nos actions et de leurs conséquences dans la société.",
-  fullDescription_2_Title1: "La Faute : Premier Pilier de la Responsabilité Civile",
+  fullDescription_2_Title1:
+    "La Faute : Premier Pilier de la Responsabilité Civile",
   fullDescription_2_Text1:
     "La notion de faute est centrale dans l’application de l’article 1457. Elle englobe non seulement les actions intentionnelles malveillantes mais aussi les négligences, les imprudences, et les manquements à nos devoirs. Chaque fois que nous dévions de la conduite attendue d’une personne raisonnable dans des circonstances similaires, nous franchissons le seuil de la faute. Cette flexibilité conceptuelle permet d’adapter la loi aux infinies nuances de la vie réelle, offrant une protection à ceux affectés par les actes d’autrui.",
   fullDescription_2_Title2: "Le Préjudice : Seconde Clef de Voûte",
   fullDescription_2_Text2:
     "Pour qu’il y ait responsabilité, il doit y avoir préjudice. Ce préjudice peut être physique, moral, ou matériel. Il doit être réel, direct, et certain. L’article 1457 ne se contente pas de sanctionner la faute en soi ; il cherche à remédier aux conséquences tangibles de cette faute sur la vie d’autrui. C’est la reconnaissance que derrière chaque litige, il y a des vies impactées, des rêves peut-être brisés, et une quête de réparation.",
-  fullDescription_2_Title3: "La Réparation : Conclusion Naturelle de la Responsabilité",
+  fullDescription_2_Title3:
+    "La Réparation : Conclusion Naturelle de la Responsabilité",
   fullDescription_2_Text3:
     "L’obligation de réparer est la conséquence logique de la faute et du préjudice. Elle peut prendre diverses formes, allant du dédommagement financier à la restitution, voire à la réparation en nature. Cette flexibilité permet de mieux adapter la solution au problème spécifique, cherchant non seulement à indemniser mais aussi, dans la mesure du possible, à restaurer l’état antérieur.",
   fullDescription_2_Title4: "Vers un Avenir Responsable",
@@ -210,23 +217,43 @@ export const fr = {
     "1-855-MAÎTRES est le service juridique au Québec qui se consacre à offrir des services juridiques complets et accessibles. Peu importe la nature de votre situation juridique, nous travaillons sans relâche pour défendre vos droits et vos intérêts. Nos consultations sont abordables, car nous croyons en la fourniture de conseils juridiques accessibles à tous. Si vous cherchez une solution à vos problèmes légaux, contactez-nous sans tarder au 1-855-MAÎTRES. Notre bureau est situé au 4350 Rue Beaubien E, Montréal, QC H1T 1S9. Faites le premier pas vers la résolution de vos problèmes juridiques avec l’assistance experte de 1-855-MAÎTRES.",
 
   //card5
-  cardTitle5: "Droit Civil Démystifié avec 1-855 MAÎTRES: Votre Guide Juridique au Québec",
+  cardTitle5:
+    "Droit Civil Démystifié avec 1-855 MAÎTRES: Votre Guide Juridique au Québec",
   descriptionCard5:
     "Le Droit Civil, un domaine juridique vaste et complexe, touche de près de nombreux aspects de notre vie quotidienne. Qu’il s’agisse de contrats, de responsabilités civiles, de litiges ou de successions, une compréhension approfondie du Droit Civil est cruciale pour naviguer avec succès dans ces situations. Chez 1-855 MAÎTRES, notre équipe d’avocats spécialisés est là pour simplifier le Droit Civil et vous offrir des solutions juridiques adaptées à vos besoins spécifiques.",
   fullDescription_5_Title1: "Qu’est-ce que le Droit Civil?",
   fullDescription_5_Text1:
     "Le Droit Civil englobe un ensemble de règles et de principes qui régissent les relations entre les individus et assurent la justice et l’équité dans ces interactions. Il couvre une gamme étendue de domaines, y compris les contrats, la responsabilité civile, les litiges, et les successions.",
-  fullDescription_5_Title2: "Services Juridiques en Droit Civil avec 1-855 MAÎTRES",
+  fullDescription_5_Title2:
+    "Services Juridiques en Droit Civil avec 1-855 MAÎTRES",
   fullDescription_5_Text2:
     "Notre équipe d’avocats chevronnés chez 1-855 MAÎTRES offre une gamme complète de services juridiques en Droit Civil pour vous accompagner dans divers aspects de votre vie juridique, notamment : 1 Contrats et Obligations : Rédaction, interprétation et litiges liés aux contrats. 2 Responsabilité Civile : Défense des droits en cas de préjudice subi. 3 Litiges Civils : Règlement des différends devant les tribunaux civils. 4 Successions : Conseils et assistance dans les questions successorales.",
-  fullDescription_5_Title3: "Pourquoi Choisir 1-855 MAÎTRES pour Vos Affaires en Droit Civil?",
+  fullDescription_5_Title3:
+    "Pourquoi Choisir 1-855 MAÎTRES pour Vos Affaires en Droit Civil?",
   fullDescription_5_Text3:
     "1 Expertise Spécialisée : Nos avocats spécialisés en Droit Civil possèdent une connaissance approfondie des lois et des règlements qui régissent ce domaine complexe. 2 Approche Personnalisée : Chaque cas est unique. Nous adoptons une approche personnalisée pour comprendre vos besoins spécifiques et élaborer des solutions sur mesure. 3 Transparence et Communication : Nous croyons en une communication transparente avec nos clients. Vous serez informé de chaque étape du processus juridique. 4 Accessibilité Financière : La justice doit être accessible à tous. Nous offrons des consultations abordables pour vous permettre d’obtenir l’assistance juridique dont vous avez besoin.",
-  fullDescription_5_Title4: "Contactez 1-855 MAÎTRES pour Vos Besoins en Droit Civil",
+  fullDescription_5_Title4:
+    "Contactez 1-855 MAÎTRES pour Vos Besoins en Droit Civil",
   fullDescription_5_Text4:
     "Si vous êtes confronté à des questions juridiques en Droit Civil, ne cherchez pas plus loin. Contactez-nous au 1-855-MAÎTRES (1855-624-8737) ou par e-mail à Info@1855maitres-com. Chez 1-855 MAÎTRES, nous sommes là pour vous assister à chaque étape de votre parcours juridique en vous offrant des solutions adaptées à vos besoins spécifiques. Vos intérêts seront défendus d’une main de maître! Restez informé et protégé dans le monde complexe du Droit Civil avec 1-855 MAÎTRES!",
 
   //blogDetail
 
-  cardDetailBtn: "Voir tout"
+  cardDetailBtn: "Voir tout",
+
+  // Chat
+
+  chatOpenBtn: "Écrivez-nous",
+  chatTitle: "Contactez-nous",
+  chatText:
+    "Veuillez noter que les réponses fournies ne constituent pas des avis juridiques. Nous recommandons de consulter un avocat.",
+  chatBtn: "",
+  chatBtnSubmit: "Envoyer",
+  inputMessageChat: "",
+  inputEmailChat: "Courriel",
+  inputNameChat: "Nom",
+  inputTelChat: "Téléphone",
+  messageSuccess: "Vous avez envoyé le courrier avec succès.",
+  messageError:
+    "Une erreur s'est produite lors de l'envoi des données. Veuillez réessayer.",
 };

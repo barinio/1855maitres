@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import styles from './styles/Assistant.module.scss';
-import Chat from './Chat';
+import { useState } from "react";
+import styles from "./styles/Assistant.module.scss";
+import Chat from "./Chat";
+import { t } from "i18next";
 
 function Assistant() {
   const [isChatOpen, setChatOpen] = useState(false);
@@ -13,7 +14,7 @@ function Assistant() {
     <div className={styles.appContainer}>
       {!isChatOpen && (
         <button onClick={toggleChat} className={styles.openModalBtn}>
-          Écrivez-nous
+          {t("chatOpenBtn")}
         </button>
       )}
       {isChatOpen && <Chat closeChat={toggleChat} />}

@@ -2,11 +2,11 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, Button } from "@nextui-org/react";
 
-import styles from "./LawsSection.module.scss";
+import styles from "../LawsSection/LawsSection.module.scss";
 
 import { LawItemProps } from "@/types/ListItemProps";
 
-const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) => {
+const OldListItem: React.FC<LawItemProps> = ({ title, description, img, index }) => {
   const { t } = useTranslation();
 
   const isEven = index % 2 === 0;
@@ -23,7 +23,7 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
 
         <div className={styles.btnsWrapper}>
           <Button
-            href="/old-home"
+            href="/"
             as={Link}
             variant="solid"
             className="uppercase underline text-white"
@@ -49,4 +49,4 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
   );
 };
 
-export default ListItem;
+export default OldListItem;

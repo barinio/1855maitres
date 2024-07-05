@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { InlineWidget, useCalendlyEventListener } from "react-calendly";
+import { PopupModal, useCalendlyEventListener } from "react-calendly";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "@nextui-org/button";
 import axios from "axios";
 
-import styles from "./CalendlyButton.module.scss";
-
 interface CalendlyButtonProps {
   buttonText: string;
+  color: "primary" | "default" | "secondary" | "success" | "warning" | "danger";
+  variant: "solid" | "bordered" | "light" | "flat" | "faded" | "shadow" | "ghost";
+  className: string;
+  style: {};
 }
 
 interface CalendlyEventData {
@@ -18,10 +20,12 @@ interface CalendlyEventData {
   startTime: string;
 }
 
-function CalendlyButton({ buttonText }: CalendlyButtonProps) {
+function CalendlyButton({ buttonText, color, variant, className, style }: CalendlyButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const refRootElement = document.getElementById("root") || document.body;
 
   const sendDataToBackend = async (eventData: CalendlyEventData) => {
     // eslint-disable-next-line no-console
@@ -54,32 +58,24 @@ function CalendlyButton({ buttonText }: CalendlyButtonProps) {
     }
   });
 
-  const handleClick = () => {
-    setIsOpen(true);
-  };
-
   return (
     <>
       <Button
-        style={{ display: "flex", fontSize: "16px" }}
-        color="primary"
-        variant="solid"
-        className={styles.btnLink}
-        onClick={handleClick}
+        color={color}
+        variant={variant}
+        className={className}
+        style={style}
+        onClick={() => setIsOpen(true)}
       >
         {t(buttonText)}
       </Button>
 
-      {isOpen && (
-        <div className={styles.backdrop}>
-          <div className={styles.modalPopup}>
-            <button onClick={() => setIsOpen(false)} className={styles.closeButton}>
-              ✖
-            </button>
-            <InlineWidget url="https://calendly.com/7328652/test" />
-          </div>
-        </div>
-      )}
+      <PopupModal
+        url="https://calendly.com/7328652/test"
+        onModalClose={() => setIsOpen(false)}
+        open={isOpen}
+        rootElement={refRootElement}
+      />
     </>
   );
 }

@@ -8,6 +8,7 @@ import CardDetail from "@/components/CardBlog/CardDetail";
 import PrivacyInformation from "@/pages/PrivacyInformation";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import ThankYou from "@/pages/ThankYou/ThankYou";
+import OldHome from "@/pages/OldHome/OldHome";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
       <Route element={<CardDetail />} path="/blogue/:id" />
       <Route element={<Contact />} path="/contact" />
       <Route element={<ThankYou />} path="/thank-you" />
+
+      <Route element={<OldHome />} path="/old-home" />
 
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

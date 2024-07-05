@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Button } from "@nextui-org/button";
-import { Link } from "@nextui-org/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel } from "swiper/modules";
 
 import "swiper/scss";
+import CalendlyButton from "../Calendly/CalendlyButton";
+
 import styles from "./DomaineDroitSection.module.scss";
 
 import icon from "@/images/criminal-penal-law.svg";
@@ -58,19 +58,16 @@ const DomaineDroitSection = () => {
                 </p>
 
                 <div className={styles.linkBtnWrapper}>
-                  <Button
-                    href="#"
-                    as={Link}
+                  <CalendlyButton
+                    buttonText="domaineDroitButtonText"
                     color="default"
                     variant="solid"
-                    className="text-zinc-400 "
+                    className="text-zinc-400"
                     style={{
                       border: `1px solid ${isDark ? "zinc-700" : "#3F3F46"}`,
                       backgroundColor: isDark ? "rgba(63, 63, 70, 0.4)" : "rgba(63, 63, 70, 0.9)"
                     }}
-                  >
-                    Rendez-vous
-                  </Button>
+                  />
                 </div>
               </div>
             </SwiperSlide>

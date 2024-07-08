@@ -1,4 +1,4 @@
-import civilLawImg from '@/images/civil-law.jpg';
+import civilLawImg from '@/images/civil-law.png';
 import criminalAndPenalLawwImg from '@/images/Criminal.png';
 import immigrationLawImg from '@/images/Immigration.png';
 import insuranceLawImg from '@/images/Insurance.png';

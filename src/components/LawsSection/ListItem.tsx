@@ -19,7 +19,9 @@ const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) =>
 
       <div className={styles.lawTexttWrapper}>
         <h3 className={styles.titleLawBlock}>{t(`${title}`)}</h3>
-        <p className={`${styles.descriptionLawBlock} dark:text-zinc-400s`}>{t(`${description}`)}</p>
+        <p className={`${styles.descriptionLawBlock} dark:text-zinc-400s lg:text-lg`}>
+          {t(`${description}`)}
+        </p>
 
         <div className={styles.btnsWrapper}>
           <Button

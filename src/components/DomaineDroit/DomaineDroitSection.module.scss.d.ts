@@ -5,7 +5,6 @@ declare const classNames: {
   readonly wrapperIcon: "wrapperIcon";
   readonly cardWrapper: "cardWrapper";
   readonly headerCard: "headerCard";
-  readonly descriptionCard: "descriptionCard";
   readonly swiperSlide: "swiperSlide";
   readonly linkBtnWrapper: "linkBtnWrapper";
 };

@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, Image, Button } from "@nextui-org/react";
+import { useTranslation } from "react-i18next";
 
 import { CardBlogProps } from "@/types/CardBlogProps";
-import { useTranslation } from "react-i18next";
 
 const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
   const { t } = useTranslation();

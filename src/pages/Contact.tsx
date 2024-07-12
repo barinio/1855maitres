@@ -1,5 +1,3 @@
-import GoogleMaps from "@/components/googlemaps";
-import DefaultLayout from "@/layouts/default";
 import {
   Input,
   Card,
@@ -9,10 +7,13 @@ import {
   SelectItem,
   Link,
 } from "@nextui-org/react";
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
 import ThankYou from "./ThankYou/ThankYou";
+
+import DefaultLayout from "@/layouts/default";
+import GoogleMaps from "@/components/googlemaps";
 import { dataSelect } from "@/data/dataSelect";
 
 const Contact = () => {
@@ -28,6 +29,7 @@ const Contact = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,

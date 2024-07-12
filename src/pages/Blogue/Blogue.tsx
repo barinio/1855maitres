@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+
+import CardBlog from "../../components/CardBlog/CardBlog";
+import { dataBlog } from "../../data/dataBlog";
+
 import DefaultLayout from "@/layouts/default";
 // import { title } from "@/components/primitives";
 // import { useState } from "react";
-import CardBlog from "../../components/CardBlog/CardBlog";
-import { dataBlog } from "../../data/dataBlog";
-import { Link } from "react-router-dom";
+
+
 import { BlogItem } from "@/types/CardBlogProps";
 
 const Blogue: React.FC = () => {

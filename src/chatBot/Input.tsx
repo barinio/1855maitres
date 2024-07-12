@@ -1,4 +1,5 @@
 import { useState, ChangeEvent, KeyboardEvent, FormEvent } from "react";
+
 import styles from "./styles/Input.module.scss";
 
 interface InputProps {
@@ -45,7 +46,7 @@ function Input({ sendMessage }: InputProps) {
             width="24"
             height="24"
           >
-            <path d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"></path>
+            <path d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888" />
           </svg>
         </button>
       </form>

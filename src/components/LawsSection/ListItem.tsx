@@ -7,48 +7,48 @@ import styles from "./LawsSection.module.scss";
 import { LawItemProps } from "@/types/ListItemProps";
 
 const ListItem: React.FC<LawItemProps> = ({ title, description, img, index }) => {
-  const { t } = useTranslation();
+	const { t } = useTranslation();
 
-  const isEven = index % 2 === 0;
+	const isEven = index % 2 === 0;
 
-  const buttonColor = isEven ? "#C20E4D" : "#F96501";
+	const buttonColor = isEven ? "#C20E4D" : "#F96501";
 
-  return (
-    <li key={title} className={styles.lawContentWrapper}>
-      {!isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
+	return (
+		<li key={title} className={styles.lawContentWrapper}>
+			{!isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
 
-      <div className={styles.lawTexttWrapper}>
-        <h3 className={styles.titleLawBlock}>{t(`${title}`)}</h3>
-        <p className={`${styles.descriptionLawBlock} dark:text-zinc-400s lg:text-lg`}>
-          {t(`${description}`)}
-        </p>
+			<div className={styles.lawTexttWrapper}>
+				<h3 className={styles.titleLawBlock}>{t(`${title}`)}</h3>
+				<p className={`${styles.descriptionLawBlock} dark:text-zinc-400s lg:text-lg`}>
+					{t(`${description}`)}
+				</p>
 
-        <div className={styles.btnsWrapper}>
-          <Button
-            href="/old-home"
-            as={Link}
-            variant="solid"
-            className="uppercase underline text-white"
-            style={{ backgroundColor: buttonColor }}
-          >
-            By telephone
-          </Button>
+				<div className={styles.btnsWrapper}>
+					<Button
+						href="/old-home"
+						as={Link}
+						variant="solid"
+						className="uppercase underline text-white"
+						style={{ backgroundColor: buttonColor }}
+					>
+						By telephone
+					</Button>
 
-          <Button
-            href="#"
-            as={Link}
-            variant="bordered"
-            radius="full"
-            className="uppercase underline"
-            style={{ border: `1px solid ${buttonColor}`, color: buttonColor }}
-          >
-            By videoconference
-          </Button>
-        </div>
-      </div>
-      {isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
-    </li>
-  );
+					<Button
+						href="#"
+						as={Link}
+						variant="bordered"
+						radius="full"
+						className="uppercase underline"
+						style={{ border: `1px solid ${buttonColor}`, color: buttonColor }}
+					>
+						By videoconference
+					</Button>
+				</div>
+			</div>
+			{isEven && <img src={img} alt={title} className={styles.isEvenImg} width={520} />}
+		</li>
+	);
 };
 
 export default ListItem;

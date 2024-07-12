@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
+import PulseLoader from "react-spinners/PulseLoader";
+import { t } from "i18next";
+
 import styles from "./styles/Chat.module.scss";
 import Input from "./Input";
 import KeywordForm from "./KeywordForm";
-import PulseLoader from "react-spinners/PulseLoader";
-import { t } from "i18next";
 
 interface Message {
   content: string;
@@ -24,6 +25,7 @@ function Chat({ closeChat }: ChatProps) {
     ws.current = new WebSocket("wss://one855-product-code.onrender.com");
     ws.current.onmessage = (event) => {
       const receivedMessage: Message = JSON.parse(event.data);
+
       console.log("Received message: ", receivedMessage);
       setIsLoading(false);
       setMessages((prevMessages) => [...prevMessages, receivedMessage]);
@@ -46,6 +48,7 @@ function Chat({ closeChat }: ChatProps) {
     if (!ws.current || ws.current.readyState === WebSocket.CLOSED) {
       setupWebSocket();
     }
+
     return () => {
       ws.current?.close();
     };
@@ -57,6 +60,7 @@ function Chat({ closeChat }: ChatProps) {
         chatRef.current.scrollTop = chatRef.current.scrollHeight;
       }
     };
+
     scrollToBottom();
   }, [messages]);
 
@@ -70,6 +74,7 @@ function Chat({ closeChat }: ChatProps) {
         content: message,
         type: "outgoing",
       });
+
       console.log("Sending message: ", messageData);
       ws.current.send(messageData);
       setIsLoading(true);

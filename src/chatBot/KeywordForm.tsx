@@ -1,7 +1,8 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
-import styles from "./styles/KeywordForm.module.scss";
 import { useTranslation } from "react-i18next";
+
+import styles from "./styles/KeywordForm.module.scss";
 
 interface FormData {
   email: string;

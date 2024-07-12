@@ -1,10 +1,10 @@
 import { Card, Image, Button } from "@nextui-org/react";
 import { useNavigate, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import DefaultLayout from "@/layouts/default";
 import { CardDetailProps } from "@/types/CardDetailProps";
 import { dataBlog } from "@/data/dataBlog";
-import { useTranslation } from "react-i18next";
 
 const CardDetail: React.FC<CardDetailProps> = () => {
   const { id } = useParams();

@@ -1,8 +1,9 @@
+import img5 from "../images/blogs/demystifie-avec5.png";
+
 import img1 from "@/images/blogs/good-faith1.png";
 import img2 from "@/images/blogs/civil-liability2.png";
 import img3 from "@/images/blogs/prescription3.png";
 import img4 from "@/images/blogs/defendant4.png";
-import img5 from "@/images/blogs/demystifie-avec5.png";
 
 export const dataBlog = [
   {

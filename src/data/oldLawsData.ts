@@ -1,12 +1,12 @@
-import civilLawImg from '@/images/civil-law.png';
-import criminalAndPenalLawwImg from '@/images/Criminal.png';
-import immigrationLawImg from '@/images/Immigration.png';
-import insuranceLawImg from '@/images/Insurance.png';
-import laborAndSocialLawImg from '@/images/social.jpg';
-import otherTypeOfLawImg from '@/images/area-of-law.jpg';
+import civilLawImg from '@/images/old/old-civil-law.png';
+import criminalAndPenalLawwImg from '@/images/old/old-criminal.png';
+import immigrationLawImg from '@/images/old/old-immigration.png';
+import insuranceLawImg from '@/images/old/old-insurance.png';
+import laborAndSocialLawImg from '@/images/old/old-social.png';
+import otherTypeOfLawImg from '@/images/old/old-area-of-law.png';
 import { LawItem } from '@/types/ListItemProps';
 
-export const LawsData: LawItem[] = [
+export const OldLawsData: LawItem[] = [
   {
     title: 'lawsTitle1',
     description: 'lawsDescription',

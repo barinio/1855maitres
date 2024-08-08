@@ -55,4 +55,11 @@
 	background-size: cover;
 	right: 50%;
 	transform: translate(50%, 0);
+
+	@media (width < 1264px) {
+		top: -10%;
+	}
+	@media (width < 768px) {
+		top: -15%;
+	}
 }

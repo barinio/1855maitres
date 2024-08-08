@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import "./styles/Chat.module.scss";
+import PulseLoader from "react-spinners/PulseLoader";
+import { t } from "i18next";
+
+import styles from "./styles/Chat.module.scss";
 import Input from "./Input";
 import KeywordForm from "./KeywordForm";
-import PulseLoader from "react-spinners/PulseLoader";
-import styles from "./styles/Chat.module.scss";
 
 interface Message {
   content: string;
@@ -21,9 +22,10 @@ function Chat({ closeChat }: ChatProps) {
   const chatRef = useRef<HTMLDivElement | null>(null);
 
   const setupWebSocket = () => {
-    ws.current = new WebSocket("wss://avocad-chat-back.onrender.com");
+    ws.current = new WebSocket("wss://one855-product-code.onrender.com");
     ws.current.onmessage = (event) => {
       const receivedMessage: Message = JSON.parse(event.data);
+
       console.log("Received message: ", receivedMessage);
       setIsLoading(false);
       setMessages((prevMessages) => [...prevMessages, receivedMessage]);
@@ -46,6 +48,7 @@ function Chat({ closeChat }: ChatProps) {
     if (!ws.current || ws.current.readyState === WebSocket.CLOSED) {
       setupWebSocket();
     }
+
     return () => {
       ws.current?.close();
     };
@@ -57,19 +60,28 @@ function Chat({ closeChat }: ChatProps) {
         chatRef.current.scrollTop = chatRef.current.scrollHeight;
       }
     };
-    scrollToBottom(); // Вызываем функцию прокрутки после каждого обновления сообщений
+
+    scrollToBottom();
   }, [messages]);
 
   const sendMessage = (message: string) => {
-    if (message !== "" && ws.current && ws.current.readyState === WebSocket.OPEN) {
+    if (
+      message !== "" &&
+      ws.current &&
+      ws.current.readyState === WebSocket.OPEN
+    ) {
       const messageData = JSON.stringify({
         content: message,
-        type: "outgoing"
+        type: "outgoing",
       });
+
       console.log("Sending message: ", messageData);
       ws.current.send(messageData);
       setIsLoading(true);
-      setMessages((prevMessages) => [...prevMessages, { content: message, type: "outgoing" }]);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { content: message, type: "outgoing" },
+      ]);
     }
   };
 
@@ -103,11 +115,8 @@ function Chat({ closeChat }: ChatProps) {
           <Input sendMessage={sendMessage} />
         </div>
       </div>
-      <div className={styles.textItIsBotWrapper}>
-        <p className={styles.textItIsBot}>
-          Veuillez noter que les réponses fournies ne constituent pas des avis juridiques. Nous
-          recommandons de consulter un avocat.
-        </p>
+      <div>
+        <p className={styles.textItIsBot}>{t("chatText")}</p>
       </div>
     </div>
   );

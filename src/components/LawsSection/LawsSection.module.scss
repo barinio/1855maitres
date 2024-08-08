@@ -62,8 +62,8 @@
 	gap: 16px;
 }
 .isEvenImg {
+	object-fit: cover;
 	@media (width < 1040px) {
-		object-fit: cover;
 		width: 40%;
 	}
 }

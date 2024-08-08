@@ -1,5 +1,3 @@
-import GoogleMaps from "@/components/googlemaps";
-import DefaultLayout from "@/layouts/default";
 import {
   Input,
   Card,
@@ -9,10 +7,13 @@ import {
   SelectItem,
   Link,
 } from "@nextui-org/react";
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
 import ThankYou from "./ThankYou/ThankYou";
+
+import DefaultLayout from "@/layouts/default";
+import GoogleMaps from "@/components/googlemaps";
 import { dataSelect } from "@/data/dataSelect";
 
 const Contact = () => {
@@ -28,6 +29,7 @@ const Contact = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
@@ -35,7 +37,6 @@ const Contact = () => {
   };
 
   const handleSubmit = () => {
-    console.log(formData);
     setFormData({
       username: "",
       email: "",
@@ -49,7 +50,6 @@ const Contact = () => {
     <DefaultLayout>
       <section className="items-center pt-5 justify-center md:px-10 lg:w-full lg:px-0">
         <div className="max-w-sm  ml-auto mr-auto  md:max-w-2xl lg:max-w-full">
-          {/* <h1 className={title()}>Contact</h1> */}
           {showThankPage ? (
             <ThankYou />
           ) : (
@@ -143,14 +143,14 @@ const Contact = () => {
                 </div>
 
                 <div className="md:flex justify-between md:mb-6 lg:flex-col lg:justify-start gap-[73px] ">
-                  <div className="m-auto w-64 h-52 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[570px] lg:h-[506px]">
+                  <div className="m-auto w-80 h-72 mb-10 md:w-96 md:h-80 md:m-0 lg:w-[600px] lg:h-[506px]">
                     <GoogleMaps />
                   </div>
 
                   <div className="md:flex flex-col justify-between">
                     <div className="lg:absolute top-[-95px] left-0">
                       <p className="text-center ml-auto mr-auto mb-4 max-w-52 md:text-start md:ml-0 ">
-                        {t("contactAdress")}
+                        {t("contactAdress")}{" "}
                         <span className="hidden md:inline">
                           <br />
                         </span>

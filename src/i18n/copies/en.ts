@@ -6,7 +6,7 @@ export const en = {
   contact: "Contact",
 
   // hero
-  homeHeroH1: "Des solutions juridiques adaptees a vos besoins",
+  homeHeroH1: "Legal solutions adapted to your needs",
   homeHeroBtn: "Make an appointment",
   homeHeroDescription:
     "Our goal is to make legal services accessible to citizens throughout Quebec. If you are looking to assert your rights in one of the many areas of law, you can easily contact us by dialing our unique number, ",
@@ -19,18 +19,20 @@ export const en = {
   domaineDroitTitle5: "Immigration law",
   domaineDroitTitle6: "Other type of law",
 
+  domaineDroitButtonText: "Make an appointment",
+
   domaineDroitDescription1:
     "Tailor-made legal solutions for all your civil law needs! Our expert team provides personalized advice and representation to ensure your rights are protected.",
   domaineDroitDescription2:
-    "Votre compagnie d'assurance refuse de vous payer ? Faites valoir vos droits avec notre soutien juridique expert. Nous vous aidons à obtenir la compensation que vous méritez.",
+    "Is your insurance company refusing to pay you? Assert your rights with our expert legal support. We help you get the compensation you deserve.",
   domaineDroitDescription3:
     "Facing criminal charges? You're not alone. Our recognized expertise in criminal and penal law ensures robust defense and support throughout the legal process.",
   domaineDroitDescription4:
-    "Quels que soient vos besoins, nos solutions juridiques sur mesure en droit du travail et social vous guideront. Faites confiance à nos experts pour un soutien efficace et personnalisé.",
+    "Whatever your needs, our tailor-made legal solutions in labor and social law will guide you. Trust our experts for effective and personalized support.",
   domaineDroitDescription5:
-    "Un soutien personnalisé et professionnel en droit de l'immigration. Nous vous accompagnons à chaque étape pour bâtir votre avenir au Canada.",
+    "Personalized and professional support in immigration law. We accompany you at every step to build your future in Canada.",
   domaineDroitDescription6:
-    "Explorez les possibilités juridiques de votre dossier. Contactez-nous pour découvrir comment nous pouvons élaborer ensemble une stratégie gagnante.",
+    "Explore the legal possibilities of your case. Contact us to discover how we can develop a winning strategy together.",
 
   // LawsData
   lawsTitle1: "Civil law",
@@ -41,7 +43,15 @@ export const en = {
   lawsTitle6: "Other type of law",
 
   lawsDescription:
-    "Vous cherchez des solutions en droit civil? Nous offrons une approche personnalisée et une aide qualifiée. Prenez rendez-vous pour des solutions juridiques sur mesure afin de protéger vos intérêts et droits.",
+    "Tailored legal solutions to meet all your civil law needs. Trust our expertise for representation and advice customized for every situation.",
+  lawsDescription2:
+    "Are your insurers refusing to pay you? Assert your rights! Get the compensation you deserve with our expert assistance in insurance law. We support you every step of the way to ensure you receive the fair and just payment you are entitled to.",
+  lawsDescription3:
+    "Accused of a crime or a penal offense? Defend your rights with our expertise in criminal and penal law! Our specialized lawyers support you throughout the judicial process to ensure a rigorous and personalized defense. We are here to help you understand your options and achieve the best possible outcome.",
+  lawsDescription4:
+    "Facing issues at work or difficulties with social benefits? Defend your rights with our expertise in labor and social law! Our specialized lawyers assist you in resolving employment disputes, wrongful terminations, harassment cases, and social security issues. We are committed to providing tailored solutions to ensure your protection and defend your interests.",
+  lawsDescription5: `Do you have questions about immigration or are you facing difficulties with your immigrant status? Assert your rights with our expertise in immigration law! Our specialized lawyers support you in all administrative processes, visa applications, permanent residences, and naturalization procedures. We are committed to providing personalized advice and effective representation to ensure the protection of your rights and ease your integration. Trust our experience to navigate the complex immigration system and guarantee your success.`,
+  lawsDescription6: `Do you have specific legal needs in a particular area? Trust our versatile expertise! Whether it's family law, commercial law, real estate law, or any other legal field, our specialized lawyers are here to advise and represent you. We offer personalized solutions and comprehensive legal assistance to defend your interests and ensure the best possible outcome.`,
 
   // Footer
   footerText:
@@ -128,7 +138,7 @@ export const en = {
   label7: "OTHER TYPE OF LAW",
   contactBtn1: "Send",
   contactBtn2: "Get directions",
-  contactAdress: "4350 Rue Beaubien E, Montreal, QC",
+  contactAdress: "4350 Rue Beaubien East, Montreal, QC",
 
   //thanck you
   thankYouTitle: "Application sent successfully",
@@ -229,4 +239,19 @@ export const en = {
   //blogDetail
 
   cardDetailBtn: "See all",
+
+  //Chat
+
+  chatOpenBtn: "Write to us",
+  chatTitle: "Your contacts",
+  chatText:
+    "Please note that the answers provided do not constitute legal advice. We recommend consulting a lawyer.",
+  chatBtn: "",
+  chatBtnSubmit: "Send",
+  inputMessageChat: "",
+  inputEmailChat: "E-mail",
+  inputNameChat: "Name",
+  inputTelChat: "Phone",
+  messageSuccess: "You have successfully sent the mail.",
+  messageError: "An error occurred while sending data. Please try again.",
 };

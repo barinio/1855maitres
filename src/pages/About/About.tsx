@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import DefaultLayout from "@/layouts/default";
 import { aboutData } from "@/data/aboutData";
-import aboutImg from "@/images/about-img.jpeg";
+import aboutImg from "@/images/about-img.png";
 
 const About = () => {
   const { t } = useTranslation();

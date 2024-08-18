@@ -16,14 +16,10 @@ const CardBlog: React.FC<CardBlogProps> = ({ data, onClickCard }) => {
               alt={t(`${data.title}`)}
               className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
               src={data.img}
-              // onClick={() => onClickCard()}
             />
           </div>
 
-          <h4
-            className="font-bold text-large mb-3 h-[76px] text-center overflow-hidden"
-            // onClick={() => onClickCard()}
-          >
+          <h4 className="font-bold text-large mb-3 h-[76px] text-center overflow-hidden">
             {t(`${data.title}`)}
           </h4>
           <p className="text-left h-[122px] mb-2 overflow-hidden text-ellipsis">

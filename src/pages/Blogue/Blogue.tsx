@@ -9,7 +9,7 @@ import { BlogItem } from "@/types/CardBlogProps";
 
 const Blogue: React.FC = () => {
   const handleClickCard = (blogItem: BlogItem) => {
-    // console.log("prop :>> ", blogItem);
+    console.log("prop :>> ", blogItem);
   };
 
   return (
@@ -18,7 +18,7 @@ const Blogue: React.FC = () => {
         <section className="pt-5">
           <div className="">
             <ul className="flex flex-col items-center gap-7 md:flex-row md:flex-wrap md:justify-center ">
-              {dataBlog.map((blogItem) => (
+              {dataBlog.map(blogItem => (
                 <Link to={`/blogue/${blogItem.id}`} key={blogItem.id}>
                   <CardBlog
                     key={blogItem.id}

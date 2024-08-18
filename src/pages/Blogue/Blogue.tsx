@@ -4,20 +4,12 @@ import CardBlog from "../../components/CardBlog/CardBlog";
 import { dataBlog } from "../../data/dataBlog";
 
 import DefaultLayout from "@/layouts/default";
-// import { title } from "@/components/primitives";
-// import { useState } from "react";
-
 
 import { BlogItem } from "@/types/CardBlogProps";
 
 const Blogue: React.FC = () => {
-  // const [showDetailCard, setShowDetailCard] = useState<boolean>(false);
-  // const [selectedCard, setSelectedCard] = useState<BlogItem | null>(null);
-
   const handleClickCard = (blogItem: BlogItem) => {
-    console.log("prop :>> ", blogItem);
-    // setSelectedCard(blogItem);
-    // setShowDetailCard(true);
+    // console.log("prop :>> ", blogItem);
   };
 
   return (

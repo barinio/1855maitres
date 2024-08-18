@@ -1,10 +1,10 @@
 import axios from "axios";
 
 export const instance = axios.create({
-  baseURL: "http://localhost:3000/api/calendly-events"
+  baseURL: "https://one855-product-code-1.onrender.com/api/calendly-events",
 });
 export const calendly = axios.create({
-  baseURL: "https://auth.calendly.com"
+  baseURL: "https://auth.calendly.com",
 });
 
 export const setToken = (token: string) => {

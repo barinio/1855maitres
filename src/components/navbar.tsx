@@ -26,7 +26,6 @@ export const Navbar = () => {
   return (
     <header className="blur-none">
       <NextUINavbar
-        // disableAnimation
         maxWidth="2xl"
         position="sticky"
         className="max-w-[1440px] lg:ml-auto lg:mr-auto"
@@ -54,7 +53,7 @@ export const Navbar = () => {
         >
           <Logo />
           <div className="hidden sm:flex justify-start items-center md:gap-10 sm:gap-5">
-            {siteConfig.navItems.map((item) => (
+            {siteConfig.navItems.map(item => (
               <NavbarItem
                 key={item.href}
                 isActive={location.pathname === item.href}

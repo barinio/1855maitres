@@ -87,7 +87,7 @@ function CalendlyButton({
       </Button>
 
       <PopupModal
-        url="https://calendly.com/xrjj1p/30min"
+        url="https://calendly.com/1855maitres/reunion-de-15-minutes-en-teams"
         onModalClose={() => setIsOpen(false)}
         open={isOpen}
         rootElement={refRootElement}

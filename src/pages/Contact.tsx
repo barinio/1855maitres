@@ -9,12 +9,31 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Axios from "axios";
 
 import ThankYou from "./ThankYou/ThankYou";
 
 import DefaultLayout from "@/layouts/default";
 import GoogleMaps from "@/components/googlemaps";
 import { dataSelect } from "@/data/dataSelect";
+
+interface UserLetter {
+  username: string;
+  email: string;
+  telephone: string;
+  comments?: string;
+}
+
+const instance = Axios.create({
+  // baseURL: "http://localhost:3003",
+  baseURL: "https://one855-product-code-1.onrender.com",
+});
+
+const postUserLetter = async (data: UserLetter) => {
+  const res = await instance.post("/api/user/add", data);
+
+  return res;
+};
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -24,6 +43,12 @@ const Contact = () => {
     email: "",
     telephone: "",
     comments: "",
+  });
+
+  const [errors, setErrors] = useState({
+    username: "",
+    email: "",
+    telephone: "",
   });
   const [showThankPage, setShowThankPage] = useState(false);
 
@@ -36,13 +61,54 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = () => {
-    setFormData({
-      username: "",
-      email: "",
-      telephone: "",
-      comments: "",
-    });
+  const validate = () => {
+    let isValid = true;
+    const newErrors = { username: "", email: "", telephone: "" };
+
+    if (!formData.username) {
+      newErrors.username = "Full name is required";
+      isValid = false;
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email address is invalid";
+      isValid = false;
+    }
+
+    if (!formData.telephone) {
+      newErrors.telephone = "Telephone number is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+
+    return isValid;
+  };
+
+  const handleSubmit = async () => {
+    if (!validate()) {
+      return;
+    }
+
+    console.log("formData :>> ", formData);
+
+    try {
+      await postUserLetter(formData);
+    } catch (error) {
+      console.log("error:", error);
+    } finally {
+      // setSubmitting(false);
+      setFormData({
+        username: "",
+        email: "",
+        telephone: "",
+        comments: "",
+      });
+    }
+
     setShowThankPage(true);
   };
 
@@ -60,40 +126,52 @@ const Contact = () => {
                 <div>
                   <Card className="p-6 w-full mb-6 md:p-11 lg:w-[696px]">
                     <form>
-                      <Input
-                        className="mb-7"
-                        fullWidth
-                        color="default"
-                        size="lg"
-                        placeholder={t("inputName")}
-                        name="username"
-                        value={formData.username}
-                        onChange={handleChange}
-                      />
+                      <div className="mb-7">
+                        <Input
+                          fullWidth
+                          color="default"
+                          size="lg"
+                          placeholder={t("inputName")}
+                          name="username"
+                          value={formData.username}
+                          onChange={handleChange}
+                        />
+                        {errors.username && (
+                          <div style={{ color: "red" }}>{errors.username}</div>
+                        )}
+                      </div>
 
-                      <Input
-                        className="mb-7"
-                        fullWidth
-                        color="default"
-                        size="lg"
-                        placeholder={t("inputMail")}
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                      />
+                      <div className="mb-7">
+                        <Input
+                          fullWidth
+                          color="default"
+                          size="lg"
+                          placeholder={t("inputMail")}
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                        />
+                        {errors.email && (
+                          <div style={{ color: "red" }}>{errors.email}</div>
+                        )}
+                      </div>
 
-                      <Input
-                        className="mb-12"
-                        fullWidth
-                        color="default"
-                        size="lg"
-                        placeholder={t("inputTel")}
-                        name="telephone"
-                        type="telephone"
-                        value={formData.telephone}
-                        onChange={handleChange}
-                      />
+                      <div className="mb-12">
+                        <Input
+                          fullWidth
+                          color="default"
+                          size="lg"
+                          placeholder={t("inputTel")}
+                          name="telephone"
+                          type="telephone"
+                          value={formData.telephone}
+                          onChange={handleChange}
+                        />
+                        {errors.telephone && (
+                          <div style={{ color: "red" }}>{errors.telephone}</div>
+                        )}
+                      </div>
 
                       <Textarea
                         classNames={{

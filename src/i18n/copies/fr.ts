@@ -41,6 +41,8 @@ export const fr = {
   lawsTitle4: "Droit des assurances",
   lawsTitle5: "Droit du travail et social",
   lawsTitle6: "Autre type de droit",
+  lawItemBtnTelef: "Par téléphone",
+  lawItemBtnConferen: "Par visioconférence",
 
   lawsDescription:
     "Des solutions juridiques sur mesure pour répondre à tous vos besoins en droit civil. Faites confiance à notre expertise pour une représentation et des conseils adaptés à chaque situation.",

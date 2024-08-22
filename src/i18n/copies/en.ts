@@ -41,6 +41,8 @@ export const en = {
   lawsTitle4: "Insurance law",
   lawsTitle5: "Labor and social law",
   lawsTitle6: "Other type of law",
+  lawItemBtnTelef: "By telephone",
+  lawItemBtnConferen: "By videoconference",
 
   lawsDescription:
     "Tailored legal solutions to meet all your civil law needs. Trust our expertise for representation and advice customized for every situation.",

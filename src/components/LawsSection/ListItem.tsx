@@ -34,13 +34,13 @@ const ListItem: React.FC<LawItemProps> = ({
 
         <div className={styles.btnsWrapper}>
           <Button
-            href="https://calendly.com/1855maitres/reunion-de-15-minutes-en-teams"
+            href="tel:+18556248737"
             as={Link}
             variant="solid"
             className="uppercase underline text-white"
             style={{ backgroundColor: buttonColor }}
           >
-            By telephone
+            {t("lawItemBtnTelef")}
           </Button>
 
           <Button
@@ -51,7 +51,7 @@ const ListItem: React.FC<LawItemProps> = ({
             className="uppercase underline"
             style={{ border: `1px solid ${buttonColor}`, color: buttonColor }}
           >
-            By videoconference
+            {t("lawItemBtnConferen")}
           </Button>
         </div>
       </div>

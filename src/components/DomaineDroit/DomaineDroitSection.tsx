@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Mousewheel } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/scss";
 import CalendlyButton from "../Calendly/CalendlyButton";
@@ -25,22 +25,22 @@ const DomaineDroitSection = () => {
         breakpoints={{
           0: {
             slidesPerView: 2,
-            direction: "vertical"
+            direction: "vertical",
           },
           730: {
             slidesPerView: 2.2,
-            direction: "horizontal"
+            direction: "horizontal",
           },
           1150: {
-            slidesPerView: 3.5
-          }
+            slidesPerView: 3.5,
+          },
         }}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         }}
         mousewheel={true}
-        modules={[Autoplay, Mousewheel]}
+        modules={[Autoplay]}
         className={styles.verticalCenter}
       >
         {domaineDroitData.map(({ id, title, description }) => {
@@ -63,7 +63,9 @@ const DomaineDroitSection = () => {
                     className="text-zinc-400"
                     style={{
                       border: `1px solid ${isDark ? "zinc-700" : "#3F3F46"}`,
-                      backgroundColor: isDark ? "rgba(63, 63, 70, 0.4)" : "rgba(63, 63, 70, 0.9)"
+                      backgroundColor: isDark
+                        ? "rgba(63, 63, 70, 0.4)"
+                        : "rgba(63, 63, 70, 0.9)",
                     }}
                   />
                 </div>

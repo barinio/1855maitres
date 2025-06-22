@@ -12,15 +12,15 @@ The site has a `Home page`:
 
 An `About page` with additional information:
 
-![All Cars page](./assets/about-page.jpg)
+![About page](./assets/about-page.jpg)
 
 A `Blog page`:
 
-![All Cars page](./assets/blog-page.jpg)
+![Blog page](./assets/blog-page.jpg)
 
 And a `Contact page`:
 
-![All Cars page](./assets/contact-page.jpg)
+![Contact page](./assets/contact-page.jpg)
 
 ## Additional Information
 
